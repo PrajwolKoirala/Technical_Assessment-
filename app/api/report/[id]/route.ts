@@ -4,48 +4,30 @@ import { generateMarkdownReport } from "@/lib/reportGenerator";
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
-    const { id } = params;
-
+    const { id } = await params;
     const result = db.getSearch(id);
-
     if (!result) {
-      return NextResponse.json(
-        { success: false, error: "Not found" },
-        { status: 404 }
-      );
+      return NextResponse.json({ success: false, error: "Not found" }, { status: 404 });
     }
 
-    const format =
-      new URL(req.url).searchParams.get("format") ?? "json";
-
-    const md = generateMarkdownReport(result);
+    const format = new URL(req.url).searchParams.get("format") ?? "json";
 
     if (format === "markdown") {
-      const safeName =
-        result.entity?.name?.replace(/\s+/g, "-") ?? "osint-report";
-
+      const md = generateMarkdownReport(result);
       return new NextResponse(md, {
         headers: {
           "Content-Type": "text/markdown",
-          "Content-Disposition": `attachment; filename="osint-report-${safeName}.md"`,
+          "Content-Disposition": `attachment; filename="osint-report-${result.entity.name.replace(/\s+/g, "-")}.md"`,
         },
       });
     }
 
-    return NextResponse.json({
-      success: true,
-      data: {
-        markdown: md,
-        result,
-      },
-    });
+    const md = generateMarkdownReport(result);
+    return NextResponse.json({ success: true, data: { markdown: md, result } });
   } catch (err) {
-    return NextResponse.json(
-      { success: false, error: "Report generation failed" },
-      { status: 500 }
-    );
+    return NextResponse.json({ success: false, error: "Report generation failed" }, { status: 500 });
   }
 }

@@ -1,0 +1,55 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Full search result (heavy — capped at 200 rows) ────────────────────────
+
+model Search {
+  id          String   @id
+  entityName  String
+  entityType  String   // "company" | "individual"
+  status      String   // "pending" | "running" | "complete" | "error"
+  summary     String
+  createdAt   DateTime
+  completedAt DateTime?
+
+  // RiskScore stored as flat columns (avoids a join for the common read path)
+  riskOverall        Int
+  riskSocial         Int
+  riskTechnical      Int
+  riskRegulatory     Int
+  highRiskCount      Int
+  criticalRiskCount  Int
+
+  // AdapterResult[] serialised as JSON (avoids many join tables for a read-heavy workload)
+  resultsJson String   // JSON.stringify(AdapterResult[])
+
+  // Relation to lightweight history row
+  history SearchHistory?
+
+  @@map("searches")
+}
+
+// ─── Lightweight history entry (capped at 500 rows) ─────────────────────────
+
+model SearchHistory {
+  id             String   @id
+  entityName     String
+  entityType     String
+  riskScore      Int
+  dataPointCount Int
+  adapterCount   Int
+  createdAt      DateTime
+  status         String   // "complete" | "error"
+
+  search   Search @relation(fields: [id], references: [id], onDelete: Cascade)
+
+  @@map("search_history")
+}
