@@ -4,11 +4,11 @@ import { Shield, Zap, Database, FileText } from "lucide-react";
 export default function HomePage() {
   return (
     <div className="min-h-[90vh] flex flex-col items-center justify-center px-4 py-16">
-      {/* Hero */}
+  
       <div className="text-center space-y-6 mb-16 animate-fade-in">
         <div className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/10 px-4 py-1.5 text-xs font-mono text-cyan-400">
           <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
-          {/* Open-Source Intelligence Platform */}
+          
         </div>
 
         <h1 className="text-5xl sm:text-6xl font-black tracking-tighter leading-none">
@@ -25,12 +25,12 @@ export default function HomePage() {
         </p>
       </div>
 
-      {/* Search */}
+  
       <div className="w-full animate-fade-in" style={{ animationDelay: "0.1s" }}>
         <SearchForm />
       </div>
 
-      {/* Feature pills */}
+
       <div className="mt-16 grid grid-cols-2 sm:grid-cols-4 gap-4 w-full max-w-2xl animate-fade-in" style={{ animationDelay: "0.2s" }}>
         {[
           { icon: Shield, label: "6 Data Sources", desc: "WHOIS, GitHub, HIBP & more" },

@@ -4,7 +4,7 @@
  */
 
 import { AdapterRegistry } from "./base";
-import { WhoisAdapter } from "./whois";
+import { WhoisAdapter } from "./whois"; 
 import { GitHubAdapter } from "./github";
 import { HibpAdapter } from "./hibp";
 import { NewsAdapter } from "./news";
