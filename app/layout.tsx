@@ -28,7 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
               <span className="font-bold text-lg tracking-tight" style={{ fontFamily: "'Space Grotesk', sans-serif" }}>
                 <span className="text-cyan-400">OSINT</span>
-                <span className="text-slate-300"> Intel</span>
+                <span className="text-slate-300"> Logo</span>
               </span>
             </Link>
             <div className="flex items-center gap-1">

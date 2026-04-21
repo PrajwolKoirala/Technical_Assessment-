@@ -1,6 +1,485 @@
 {
   "searches": [
     {
+      "id": "0b689eec-5d9d-420c-87ca-3bf7db9a09b4",
+      "entity": {
+        "name": "AiGeeks",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "611b74c1-e13b-46b0-bbef-48537c3e5b45",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/company/aigeeks",
+              "sourceUrl": "https://www.linkedin.com/company/aigeeks",
+              "timestamp": "2026-04-21T14:17:57.510Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "2d2d3cca-c534-409f-93e6-74851a1ddca3",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"AiGeeks\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=AiGeeks&src=typed_query",
+              "timestamp": "2026-04-21T14:17:57.510Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "9aff1bf6-d383-45ae-9839-402bfe13902e",
+              "title": "Company Match: aigeekslab",
+              "value": "Domain: aigeekslab.com",
+              "sourceUrl": "https://aigeekslab.com",
+              "timestamp": "2026-04-21T14:17:57.510Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "806a0033-9e50-42a2-ab6d-5bf50514792e",
+              "title": "Crunchbase (Company Intelligence)",
+              "value": "Search AiGeeks on Crunchbase for funding, investors & more",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations/field/organizations/facet_ids/company?q=AiGeeks",
+              "timestamp": "2026-04-21T14:17:57.510Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:17:57.510Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "0eb6a4fc-f3f3-47c0-8871-7e37eb44c9d7",
+              "title": "Domain",
+              "value": "aigeeks.com",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T14:17:57.746Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "92f45129-cd1d-43d8-b03c-69dcdf1f411d",
+              "title": "Registrar",
+              "value": "GoDaddy.com, LLC",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T14:17:57.746Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "67cfbec9-6ffe-471f-a075-30080b226777",
+              "title": "Registered On",
+              "value": "4/27/2016",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T14:17:57.746Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "8c56e88b-69c6-4c84-8dcf-7707f7e1ba86",
+              "title": "Expires On",
+              "value": "4/27/2027",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T14:17:57.746Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "2c9a0b78-a6bd-4a2c-936c-12aa5357eb3a",
+              "title": "Name Servers",
+              "value": "NS47.DOMAINCONTROL.COM, NS48.DOMAINCONTROL.COM",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T14:17:57.746Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "2488d175-14fb-4cd5-9b6c-815cc9e626bd",
+              "title": "DNS A Records (IPv4)",
+              "value": "162.159.140.166",
+              "sourceUrl": "https://cloudflare-dns.com/dns-query?name=aigeeks.com&type=A",
+              "timestamp": "2026-04-21T14:17:57.746Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:17:57.745Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "42e75f7f-179e-4680-a296-1fa6619fd19a",
+              "title": "GitHub Organization",
+              "value": "@AIGEEKS — 0 public repositories",
+              "sourceUrl": "https://github.com/AIGEEKS",
+              "timestamp": "2026-04-21T14:17:57.755Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:17:57.754Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "4686e442-ebfd-4c44-bf0d-3d812265b636",
+              "title": "No Known Data Breaches",
+              "value": "Domain aigeeks.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-21T14:17:57.758Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:17:57.758Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "d14d6c08-b740-48ca-94ae-7bdafd79ba27",
+              "title": "News Search",
+              "value": "Set NEWS_API_KEY or GNEWS_API_KEY in .env.local for full news coverage of \"AiGeeks\"",
+              "timestamp": "2026-04-21T14:17:57.763Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:17:57.762Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "f5314019-c750-485e-808e-aab6f86915ce",
+              "title": "SEC EDGAR Search",
+              "value": "View AiGeeks public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=AiGeeks&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-21T14:17:57.766Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "5f3f0b8f-09e9-4cf1-9e2d-2f59b0d2cb3f",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify AiGeeks against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=AiGeeks",
+              "timestamp": "2026-04-21T14:17:57.766Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:17:57.766Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 8,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 8
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"AiGeeks\" completed across 6/6 data sources. 15 data points collected. Overall risk assessment: LOW RISK (8/100). No major risk indicators found.",
+      "createdAt": "2026-04-21T14:17:57.510Z",
+      "status": "complete",
+      "completedAt": "2026-04-21T14:18:07.233Z"
+    },
+    {
+      "id": "f5095cb4-ee5a-4f6b-bc8a-0e189cf6da6f",
+      "entity": {
+        "name": "Apple Inc",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "43670668-63e2-463a-9719-3a6319dce585",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/company/apple-inc",
+              "sourceUrl": "https://www.linkedin.com/company/apple-inc",
+              "timestamp": "2026-04-21T14:13:25.090Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "711e6dd5-75ae-497b-bdd9-68fa3a4b0c0c",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Apple Inc\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Apple%20Inc&src=typed_query",
+              "timestamp": "2026-04-21T14:13:25.090Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "db65719b-fa60-4b05-9db4-8d1c23605891",
+              "title": "Wikidata: Apple Inc.",
+              "value": "American multinational technology company based in Cupertino, California",
+              "sourceUrl": "http://www.wikidata.org/entity/Q312",
+              "timestamp": "2026-04-21T14:13:25.090Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "5ed9fff5-b142-4138-a28a-32127b26138e",
+              "title": "Wikidata: Apple media event",
+              "value": "type of periodical livestreamed special event held by Apple Inc.",
+              "sourceUrl": "http://www.wikidata.org/entity/Q62033032",
+              "timestamp": "2026-04-21T14:13:25.090Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "62af120a-0f9a-4be9-8211-5c55001a466a",
+              "title": "Company Match: Apple Inclusion",
+              "value": "Domain: appleinclusion.com",
+              "sourceUrl": "https://appleinclusion.com",
+              "timestamp": "2026-04-21T14:13:25.090Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "176cb8c8-8d31-4f24-ab5a-d21b4dc6cc7e",
+              "title": "Company Match: Apple Inclusive",
+              "value": "Domain: appleinclusive.com",
+              "sourceUrl": "https://appleinclusive.com",
+              "timestamp": "2026-04-21T14:13:25.090Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "75b079b8-b6f3-4418-857f-b8f3d65a73ce",
+              "title": "Crunchbase (Company Intelligence)",
+              "value": "Search Apple Inc on Crunchbase for funding, investors & more",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations/field/organizations/facet_ids/company?q=Apple%20Inc",
+              "timestamp": "2026-04-21T14:13:25.090Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:13:25.090Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "f2576672-352e-48b3-91d9-3609f62170ec",
+              "title": "Domain",
+              "value": "appleinc.com",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T14:13:25.096Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "151fa87e-ed5f-4525-bba7-aba60182e524",
+              "title": "Registrar",
+              "value": "GoDaddy.com, LLC",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T14:13:25.096Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "3bdf3743-5c77-4d3a-9893-79a32cd7d9a8",
+              "title": "Registered On",
+              "value": "9/8/2004",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T14:13:25.096Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "3193b8ba-c5a9-4c95-ae61-21bbfe57f887",
+              "title": "Expires On",
+              "value": "9/8/2026",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T14:13:25.096Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "135e7fe7-b301-4361-935e-a106573ffc16",
+              "title": "Name Servers",
+              "value": "NS1.AFTERNIC.COM, NS2.AFTERNIC.COM",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T14:13:25.096Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "23d870c1-5320-4a9b-a82a-70c71b8a0611",
+              "title": "DNS A Records (IPv4)",
+              "value": "76.223.54.146, 13.248.169.48",
+              "sourceUrl": "https://cloudflare-dns.com/dns-query?name=appleinc.com&type=A",
+              "timestamp": "2026-04-21T14:13:25.096Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "1d68e962-34af-41e2-90ad-c3025bd5a00a",
+              "title": "MX Records (Mail)",
+              "value": "0 .",
+              "timestamp": "2026-04-21T14:13:25.096Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:13:25.096Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "849f541d-8060-4f86-986d-1fd91d9c05af",
+              "title": "GitHub Organization",
+              "value": "@appleinc — 0 public repositories",
+              "sourceUrl": "https://github.com/appleinc",
+              "timestamp": "2026-04-21T14:13:25.101Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:13:25.100Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "9f45a466-4b65-4a66-a213-26edb9786392",
+              "title": "No Known Data Breaches",
+              "value": "Domain appleinc.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-21T14:13:25.106Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:13:25.106Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "7d575ada-b38e-434c-b97d-5b0967110817",
+              "title": "Wikipedia: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorp…",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-21T14:13:25.111Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:13:25.110Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "24fd6505-a3c0-4525-bba3-bf3e7973bb01",
+              "title": "SEC EDGAR Filings Found",
+              "value": "100 filing(s) found. Latest: undefined on 2025-10-31",
+              "sourceUrl": "https://efts.sec.gov/LATEST/search-index?q=%22Apple%20Inc%22",
+              "timestamp": "2026-04-21T14:13:25.119Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "f058c029-be20-4d44-85cd-67555776b8bd",
+              "title": "SEC EDGAR Search",
+              "value": "View Apple Inc public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Apple%20Inc&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-21T14:13:25.119Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "722e3e15-0da5-494a-ac5a-1cb42a360118",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Apple Inc against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Apple%20Inc",
+              "timestamp": "2026-04-21T14:13:25.119Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T14:13:25.119Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 7,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 6
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Apple Inc\" completed across 6/6 data sources. 20 data points collected. Overall risk assessment: LOW RISK (7/100). No major risk indicators found.",
+      "createdAt": "2026-04-21T14:13:25.090Z",
+      "status": "complete",
+      "completedAt": "2026-04-21T14:13:30.979Z"
+    },
+    {
       "id": "aa7c23ad-ef9c-4d7a-92f1-41c1acc09ca8",
       "entity": {
         "name": "Prajwol Koirala",
@@ -1249,6 +1728,26 @@
     }
   ],
   "history": [
+    {
+      "id": "0b689eec-5d9d-420c-87ca-3bf7db9a09b4",
+      "entityName": "AiGeeks",
+      "entityType": "company",
+      "riskScore": 8,
+      "dataPointCount": 15,
+      "adapterCount": 6,
+      "createdAt": "2026-04-21T14:17:57.510Z",
+      "status": "complete"
+    },
+    {
+      "id": "f5095cb4-ee5a-4f6b-bc8a-0e189cf6da6f",
+      "entityName": "Apple Inc",
+      "entityType": "company",
+      "riskScore": 7,
+      "dataPointCount": 20,
+      "adapterCount": 6,
+      "createdAt": "2026-04-21T14:13:25.090Z",
+      "status": "complete"
+    },
     {
       "id": "aa7c23ad-ef9c-4d7a-92f1-41c1acc09ca8",
       "entityName": "Prajwol Koirala",

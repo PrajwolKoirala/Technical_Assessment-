@@ -21,8 +21,8 @@ export function SearchForm() {
 
   const examples =
     type === "company"
-      ? ["Apple Inc", "OpenAI", "Anthropic", "SpaceX"]
-      : ["Elon Musk", "Sam Altman", "Travis Haasch"];
+      ? ["AiGeeks", "OpenAI", "Anthropic", "SpaceX"]
+      : ["Travis","Elon Musk", "Sam Altman", "Sundar Pichai"];
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto space-y-6">
