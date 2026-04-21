@@ -1,0 +1,551 @@
+{
+  "searches": [
+    {
+      "id": "7dc4524f-457a-4d26-b231-f2d6f17dded4",
+      "entity": {
+        "name": "Elon Musk",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Elon Musk",
+          "status": "success",
+          "data": [
+            {
+              "id": "28b70569-1776-4db7-a836-150369e2404c",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/company/elon-musk",
+              "sourceUrl": "https://www.linkedin.com/company/elon-musk",
+              "timestamp": "2026-04-21T11:33:35.058Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "886f1f8a-8fa8-486c-9a3a-713f5de5e5fe",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Elon Musk\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Elon%20Musk&src=typed_query",
+              "timestamp": "2026-04-21T11:33:35.058Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "7616e13e-9937-43b8-9509-6e6980566117",
+              "title": "Wikidata: Elon Musk",
+              "value": "businessman and entrepreneur (born 1971)",
+              "sourceUrl": "http://www.wikidata.org/entity/Q317521",
+              "timestamp": "2026-04-21T11:33:35.058Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "be0c5e01-4691-4c60-bff7-24161cb66719",
+              "title": "Wikidata: Elon Musk: Tesla, SpaceX a hledání fantastické budoucnosti",
+              "value": "book edition published in 2015",
+              "sourceUrl": "http://www.wikidata.org/entity/Q121968158",
+              "timestamp": "2026-04-21T11:33:35.058Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "f1c48ccc-a3bc-4457-8c4c-81a0f12d038d",
+              "title": "Company Match: Elon Musk",
+              "value": "Domain: racewalking.org",
+              "sourceUrl": "https://racewalking.org",
+              "timestamp": "2026-04-21T11:33:35.058Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "76998f7c-ba4b-4c90-ac09-67232c409677",
+              "title": "Company Match: Elon Musk",
+              "value": "Domain: comixpo.com",
+              "sourceUrl": "https://comixpo.com",
+              "timestamp": "2026-04-21T11:33:35.058Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "809002dd-9e8d-4a0b-bc6e-68cf0480cecb",
+              "title": "Crunchbase (Company Intelligence)",
+              "value": "Search Elon Musk on Crunchbase for funding, investors & more",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations/field/organizations/facet_ids/company?q=Elon%20Musk",
+              "timestamp": "2026-04-21T11:33:35.058Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:33:35.058Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Elon Musk",
+          "status": "success",
+          "data": [
+            {
+              "id": "1b1131fa-58f2-4a37-bfe0-a56984a50c04",
+              "title": "Domain",
+              "value": "elonmusk.com",
+              "sourceUrl": "https://rdap.org/domain/elonmusk.com",
+              "timestamp": "2026-04-21T11:33:35.064Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "f2c74eac-fe4c-42f7-b920-84d79be8e483",
+              "title": "Registrar",
+              "value": "Network Solutions, LLC",
+              "sourceUrl": "https://rdap.org/domain/elonmusk.com",
+              "timestamp": "2026-04-21T11:33:35.064Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "7c5df136-2b42-43f1-ace3-30c7d6b439d2",
+              "title": "Registered On",
+              "value": "5/11/2007",
+              "sourceUrl": "https://rdap.org/domain/elonmusk.com",
+              "timestamp": "2026-04-21T11:33:35.064Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "a8346282-89a3-4ad5-a864-51035867c52d",
+              "title": "Expires On",
+              "value": "5/11/2027",
+              "sourceUrl": "https://rdap.org/domain/elonmusk.com",
+              "timestamp": "2026-04-21T11:33:35.064Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "56709e82-c3ac-498f-a459-7b2d45d53555",
+              "title": "Name Servers",
+              "value": "NS-1407.AWSDNS-47.ORG, NS-146.AWSDNS-18.COM, NS-1611.AWSDNS-09.CO.UK, NS-999.AWSDNS-60.NET",
+              "sourceUrl": "https://rdap.org/domain/elonmusk.com",
+              "timestamp": "2026-04-21T11:33:35.064Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "d059cb03-0932-4314-8b6c-50b12f54d372",
+              "title": "DNS A Records (IPv4)",
+              "value": "52.217.168.69, 16.15.212.165, 16.15.183.91, 16.182.37.165, 16.15.236.189, 16.15.223.139, 54.231.193.5, 16.15.223.53",
+              "sourceUrl": "https://cloudflare-dns.com/dns-query?name=elonmusk.com&type=A",
+              "timestamp": "2026-04-21T11:33:35.064Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:33:35.063Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Elon Musk",
+          "status": "success",
+          "data": [
+            {
+              "id": "e1fb1af6-3b08-4a0b-b0e9-70cbf8a37e69",
+              "title": "GitHub Profile",
+              "value": "ElonMusk — 2 repos, 128 followers",
+              "sourceUrl": "https://github.com/ElonMusk",
+              "timestamp": "2026-04-21T11:33:35.068Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "9c50fa67-6c1f-416f-b616-ae62cbfe0b12",
+              "title": "Repo: fao_zc",
+              "value": "new zc (★ 4)",
+              "sourceUrl": "https://github.com/ElonMusk/fao_zc",
+              "timestamp": "2026-03-04T22:47:28Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:33:35.067Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Elon Musk",
+          "status": "success",
+          "data": [
+            {
+              "id": "daf34768-35d2-48dd-8d07-4b754127a96c",
+              "title": "No Known Data Breaches",
+              "value": "Domain elonmusk.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-21T11:33:35.070Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:33:35.070Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Elon Musk",
+          "status": "success",
+          "data": [
+            {
+              "id": "4c6eaccc-4076-4945-94c1-7d30406b0648",
+              "title": "Wikipedia: Elon Musk",
+              "value": "Elon Reeve Musk is a businessman and entrepreneur known for his leadership of Tesla, SpaceX, X, and xAI. Musk has been the wealthiest person in the world since 2025; as of April 2026, Forbes estimates his net worth to be US$809 billion.",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Elon_Musk",
+              "timestamp": "2026-04-21T11:33:35.072Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:33:35.072Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Elon Musk",
+          "status": "success",
+          "data": [
+            {
+              "id": "58ae3316-a060-45bc-812c-f434efdccb6d",
+              "title": "SEC EDGAR Filings Found",
+              "value": "100 filing(s) found. Latest: undefined on 2016-05-24",
+              "sourceUrl": "https://efts.sec.gov/LATEST/search-index?q=%22Elon%20Musk%22",
+              "timestamp": "2026-04-21T11:33:35.075Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "b22c0f90-e290-4348-b96b-a250a6b5b2c2",
+              "title": "SEC EDGAR Search",
+              "value": "View Elon Musk public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Elon%20Musk&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-21T11:33:35.075Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "1bc363b5-a9dd-45a9-8124-81b28236c2f4",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Elon Musk against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Elon%20Musk",
+              "timestamp": "2026-04-21T11:33:35.075Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:33:35.074Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 7,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 6
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Elon Musk\" completed across 6/6 data sources. 20 data points collected. Overall risk assessment: LOW RISK (7/100). No major risk indicators found.",
+      "createdAt": "2026-04-21T11:33:35.058Z",
+      "status": "complete",
+      "completedAt": "2026-04-21T11:33:37.899Z"
+    },
+    {
+      "id": "b488cc81-4cc9-46e1-b90d-025c9f7c7ce7",
+      "entity": {
+        "name": "Apple Inc",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "6294cfd6-4dd6-451d-9fbb-da5b95ae4aef",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/company/apple-inc",
+              "sourceUrl": "https://www.linkedin.com/company/apple-inc",
+              "timestamp": "2026-04-21T11:31:27.927Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "ce594ec5-636b-408a-921d-0548989f3d68",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Apple Inc\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Apple%20Inc&src=typed_query",
+              "timestamp": "2026-04-21T11:31:27.927Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "39627e1e-59dd-4681-b059-3ca45db5ef6d",
+              "title": "Wikidata: Apple Inc.",
+              "value": "American multinational technology company based in Cupertino, California",
+              "sourceUrl": "http://www.wikidata.org/entity/Q312",
+              "timestamp": "2026-04-21T11:31:27.927Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "b8bf5415-15e8-4bfb-9278-505587779e57",
+              "title": "Wikidata: Apple media event",
+              "value": "type of periodical livestreamed special event held by Apple Inc.",
+              "sourceUrl": "http://www.wikidata.org/entity/Q62033032",
+              "timestamp": "2026-04-21T11:31:27.927Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "a82b6697-1c2e-4d4f-8f7e-746c0dc46ccb",
+              "title": "Company Match: Apple Inclusion",
+              "value": "Domain: appleinclusion.com",
+              "sourceUrl": "https://appleinclusion.com",
+              "timestamp": "2026-04-21T11:31:27.927Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "3524c18a-d896-4659-8510-165c18fbff43",
+              "title": "Company Match: Apple Inclusive",
+              "value": "Domain: appleinclusive.com",
+              "sourceUrl": "https://appleinclusive.com",
+              "timestamp": "2026-04-21T11:31:27.927Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "45aed20f-64ce-4cd7-9f01-e8f553c58ca7",
+              "title": "Crunchbase (Company Intelligence)",
+              "value": "Search Apple Inc on Crunchbase for funding, investors & more",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations/field/organizations/facet_ids/company?q=Apple%20Inc",
+              "timestamp": "2026-04-21T11:31:27.927Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:31:27.926Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "ae25388f-c555-4890-8370-7f131c7e90be",
+              "title": "Domain",
+              "value": "appleinc.com",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T11:31:27.931Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "30d730c4-315d-46fd-a7d5-51454f55f4a4",
+              "title": "Registrar",
+              "value": "GoDaddy.com, LLC",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T11:31:27.931Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "9070b062-2fe1-4b4b-a7fb-7aa0b153b799",
+              "title": "Registered On",
+              "value": "9/8/2004",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T11:31:27.931Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "bb13f848-b562-4fbd-a372-f343b8e3379e",
+              "title": "Expires On",
+              "value": "9/8/2026",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T11:31:27.931Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "1bb82ff7-a974-418d-8be3-b1cfa90f4550",
+              "title": "Name Servers",
+              "value": "NS1.AFTERNIC.COM, NS2.AFTERNIC.COM",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T11:31:27.931Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "c31968b3-7a18-4462-b80f-99aa08e577af",
+              "title": "DNS A Records (IPv4)",
+              "value": "76.223.54.146, 13.248.169.48",
+              "sourceUrl": "https://cloudflare-dns.com/dns-query?name=appleinc.com&type=A",
+              "timestamp": "2026-04-21T11:31:27.931Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "c744c6c7-8025-43db-83af-e7a124b635c0",
+              "title": "MX Records (Mail)",
+              "value": "0 .",
+              "timestamp": "2026-04-21T11:31:27.931Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:31:27.931Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "fb9b1b9f-2c3e-45f4-b2ea-571bf2ef4423",
+              "title": "GitHub Organization",
+              "value": "@appleinc — 0 public repositories",
+              "sourceUrl": "https://github.com/appleinc",
+              "timestamp": "2026-04-21T11:31:27.935Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:31:27.934Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "1fc681e9-6cb0-4c41-bb5e-45bdbb1de402",
+              "title": "No Known Data Breaches",
+              "value": "Domain appleinc.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-21T11:31:27.940Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:31:27.939Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "9deab1d3-b9e7-4486-ac5e-7acc3467c7e5",
+              "title": "Wikipedia: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorp…",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-21T11:31:27.943Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:31:27.943Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "6e68388c-b392-429b-acaa-fb10e3ccaf55",
+              "title": "SEC EDGAR Filings Found",
+              "value": "100 filing(s) found. Latest: undefined on 2025-10-31",
+              "sourceUrl": "https://efts.sec.gov/LATEST/search-index?q=%22Apple%20Inc%22",
+              "timestamp": "2026-04-21T11:31:27.947Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "59f6e35e-e36b-4f17-ad90-2fed5e0e33aa",
+              "title": "SEC EDGAR Search",
+              "value": "View Apple Inc public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Apple%20Inc&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-21T11:31:27.947Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "849c11b5-572e-4580-b6e7-a19021b284be",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Apple Inc against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Apple%20Inc",
+              "timestamp": "2026-04-21T11:31:27.947Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T11:31:27.947Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 7,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 6
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Apple Inc\" completed across 6/6 data sources. 20 data points collected. Overall risk assessment: LOW RISK (7/100). No major risk indicators found.",
+      "createdAt": "2026-04-21T11:31:27.926Z",
+      "status": "complete",
+      "completedAt": "2026-04-21T11:31:32.549Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "7dc4524f-457a-4d26-b231-f2d6f17dded4",
+      "entityName": "Elon Musk",
+      "entityType": "company",
+      "riskScore": 7,
+      "dataPointCount": 20,
+      "adapterCount": 6,
+      "createdAt": "2026-04-21T11:33:35.058Z",
+      "status": "complete"
+    },
+    {
+      "id": "b488cc81-4cc9-46e1-b90d-025c9f7c7ce7",
+      "entityName": "Apple Inc",
+      "entityType": "company",
+      "riskScore": 7,
+      "dataPointCount": 20,
+      "adapterCount": 6,
+      "createdAt": "2026-04-21T11:31:27.926Z",
+      "status": "complete"
+    }
+  ]
+}
