@@ -1,6 +1,728 @@
 {
   "searches": [
     {
+      "id": "aa7c23ad-ef9c-4d7a-92f1-41c1acc09ca8",
+      "entity": {
+        "name": "Prajwol Koirala",
+        "type": "individual"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Prajwol Koirala",
+          "status": "success",
+          "data": [
+            {
+              "id": "7e057441-49a6-4d3d-8c57-81bf172fe987",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/in/prajwol-koirala",
+              "sourceUrl": "https://www.linkedin.com/in/prajwol-koirala",
+              "timestamp": "2026-04-21T12:15:45.105Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "f27e27a0-3986-4314-a02e-48bc909af208",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Prajwol Koirala\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Prajwol%20Koirala&src=typed_query",
+              "timestamp": "2026-04-21T12:15:45.105Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:45.105Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Prajwol Koirala",
+          "status": "success",
+          "data": [
+            {
+              "id": "541cf839-2518-494f-bb5b-3f524e08e308",
+              "title": "DNS Status",
+              "value": "Domain may not exist (status 3)",
+              "timestamp": "2026-04-21T12:15:45.109Z",
+              "riskLevel": "medium",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:45.109Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Prajwol Koirala",
+          "status": "success",
+          "data": [
+            {
+              "id": "0f2022ec-65e9-45fa-86fa-55d00a711dce",
+              "title": "GitHub Profile",
+              "value": "Prajwol Koirala — 27 repos, 7 followers",
+              "sourceUrl": "https://github.com/PrajwolKoirala",
+              "timestamp": "2026-04-21T12:15:45.112Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "6b0ea02d-829d-4824-9a7c-79cfe0381b87",
+              "title": "GitHub Bio",
+              "value": "👨‍💻 Full Stack Developer | Blockchain Enthusiast | Problem Solver\r\n",
+              "sourceUrl": "https://github.com/PrajwolKoirala",
+              "timestamp": "2026-04-21T12:15:45.112Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "84fb172f-0dc9-4f3c-a08c-9cfcbafed0ef",
+              "title": "Repo: Technical_Assessment-",
+              "value": "Technical Assessment for the OSINT web application (★ 0)",
+              "sourceUrl": "https://github.com/PrajwolKoirala/Technical_Assessment-",
+              "timestamp": "2026-04-21T11:48:08Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "475491c0-d92b-47f1-8590-8d4daf98aa40",
+              "title": "Repo: HimaAI-Agrobots",
+              "value": "Agricultural DAPP (★ 2)",
+              "sourceUrl": "https://github.com/PrajwolKoirala/HimaAI-Agrobots",
+              "timestamp": "2026-04-21T05:22:47Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "05b9d843-c6e7-4041-87df-3ee1af831b2d",
+              "title": "Repo: food-waste",
+              "value": "Reduce the Food waste (★ 1)",
+              "sourceUrl": "https://github.com/PrajwolKoirala/food-waste",
+              "timestamp": "2026-04-21T05:22:58Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "3a7ce329-9924-4331-b6cc-672accc70b7a",
+              "title": "Repo: PrajwolKoirala",
+              "value": "No description (★ 0)",
+              "sourceUrl": "https://github.com/PrajwolKoirala/PrajwolKoirala",
+              "timestamp": "2025-08-20T05:32:18Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:45.112Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Prajwol Koirala",
+          "status": "success",
+          "data": [
+            {
+              "id": "9ff312fa-3074-415c-a346-2a88168cdcf7",
+              "title": "No Known Data Breaches",
+              "value": "Domain prajwolkoirala.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-21T12:15:45.114Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:45.114Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Prajwol Koirala",
+          "status": "success",
+          "data": [
+            {
+              "id": "2b97bd72-8230-4465-94d1-9c3430d2d09e",
+              "title": "News Search",
+              "value": "Set NEWS_API_KEY or GNEWS_API_KEY in .env.local for full news coverage of \"Prajwol Koirala\"",
+              "timestamp": "2026-04-21T12:15:45.117Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:45.117Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Prajwol Koirala",
+          "status": "success",
+          "data": [
+            {
+              "id": "3bcb81ea-e8c9-4b38-a169-3694cd6467c0",
+              "title": "SEC EDGAR Search",
+              "value": "View Prajwol Koirala public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Prajwol%20Koirala&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-21T12:15:45.119Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "ee013653-a2bf-43f3-b324-4bc0209652e0",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Prajwol Koirala against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Prajwol%20Koirala",
+              "timestamp": "2026-04-21T12:15:45.119Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:45.119Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 8,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 8
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Prajwol Koirala\" completed across 6/6 data sources. 13 data points collected. Overall risk assessment: LOW RISK (8/100). No major risk indicators found.",
+      "createdAt": "2026-04-21T12:15:45.105Z",
+      "status": "complete",
+      "completedAt": "2026-04-21T12:15:49.340Z"
+    },
+    {
+      "id": "e6933226-2e11-43e9-8313-f0e78e824a6e",
+      "entity": {
+        "name": "Apple Inc",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "753e64b4-db2a-4d0f-8773-dcec6d7ed711",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/company/apple-inc",
+              "sourceUrl": "https://www.linkedin.com/company/apple-inc",
+              "timestamp": "2026-04-21T12:15:27.441Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "c6d1671b-1134-4b6a-8402-45e709aa5d10",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Apple Inc\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Apple%20Inc&src=typed_query",
+              "timestamp": "2026-04-21T12:15:27.441Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "1817be36-7534-4130-9274-894cab0c0739",
+              "title": "Wikidata: Apple Inc.",
+              "value": "American multinational technology company based in Cupertino, California",
+              "sourceUrl": "http://www.wikidata.org/entity/Q312",
+              "timestamp": "2026-04-21T12:15:27.441Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "9bccede4-fab8-44ec-a2da-7d2800c07e9a",
+              "title": "Wikidata: Apple media event",
+              "value": "type of periodical livestreamed special event held by Apple Inc.",
+              "sourceUrl": "http://www.wikidata.org/entity/Q62033032",
+              "timestamp": "2026-04-21T12:15:27.441Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "7a6f847a-1ee7-46c3-93f7-2bf3b8ec4eb0",
+              "title": "Company Match: Apple Inclusion",
+              "value": "Domain: appleinclusion.com",
+              "sourceUrl": "https://appleinclusion.com",
+              "timestamp": "2026-04-21T12:15:27.441Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "c2086023-b9c4-4505-ad9d-6f121b6732f5",
+              "title": "Company Match: Apple Inclusive",
+              "value": "Domain: appleinclusive.com",
+              "sourceUrl": "https://appleinclusive.com",
+              "timestamp": "2026-04-21T12:15:27.441Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "d25e468a-1ecd-499b-be3a-019f3d716947",
+              "title": "Crunchbase (Company Intelligence)",
+              "value": "Search Apple Inc on Crunchbase for funding, investors & more",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations/field/organizations/facet_ids/company?q=Apple%20Inc",
+              "timestamp": "2026-04-21T12:15:27.441Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:27.441Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "04ac404b-edfc-4893-9f8f-6dad76a638ec",
+              "title": "Domain",
+              "value": "appleinc.com",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:27.444Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "ba361097-5437-4151-98f4-7a2c9f17ae2a",
+              "title": "Registrar",
+              "value": "GoDaddy.com, LLC",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:27.444Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "eabd1d9a-76b4-41a1-9c5d-c4f57cb9604a",
+              "title": "Registered On",
+              "value": "9/8/2004",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:27.444Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "61a97d3c-6559-444c-bf8e-481337ef254b",
+              "title": "Expires On",
+              "value": "9/8/2026",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:27.444Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "d0601e97-bd26-4212-a722-f22b7ae47307",
+              "title": "Name Servers",
+              "value": "NS1.AFTERNIC.COM, NS2.AFTERNIC.COM",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:27.444Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "462065e3-09fc-4959-b88f-1ead2a0426ab",
+              "title": "DNS A Records (IPv4)",
+              "value": "13.248.169.48, 76.223.54.146",
+              "sourceUrl": "https://cloudflare-dns.com/dns-query?name=appleinc.com&type=A",
+              "timestamp": "2026-04-21T12:15:27.444Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "6c4c9253-1781-4f1f-bc73-2da28926d813",
+              "title": "MX Records (Mail)",
+              "value": "0 .",
+              "timestamp": "2026-04-21T12:15:27.444Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:27.444Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "5ef5adc9-2bd2-4d31-b76c-ec30de7f5140",
+              "title": "GitHub Organization",
+              "value": "@appleinc — 0 public repositories",
+              "sourceUrl": "https://github.com/appleinc",
+              "timestamp": "2026-04-21T12:15:27.446Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:27.446Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "6a500749-f42e-41f2-b7c0-1837e6a934a8",
+              "title": "No Known Data Breaches",
+              "value": "Domain appleinc.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-21T12:15:27.449Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:27.449Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "a169a72e-8a7d-469e-a6cb-0bedf116d71c",
+              "title": "Wikipedia: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorp…",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-21T12:15:27.452Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:27.452Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "bb05a8ee-d3e0-4ac5-8774-50d5323d6b1d",
+              "title": "SEC EDGAR Filings Found",
+              "value": "100 filing(s) found. Latest: undefined on 2025-10-31",
+              "sourceUrl": "https://efts.sec.gov/LATEST/search-index?q=%22Apple%20Inc%22",
+              "timestamp": "2026-04-21T12:15:27.456Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "b7e8f268-5930-4f94-99cc-05169101d6e4",
+              "title": "SEC EDGAR Search",
+              "value": "View Apple Inc public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Apple%20Inc&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-21T12:15:27.456Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "f9c86d81-bc65-477f-bfd7-829a027af97a",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Apple Inc against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Apple%20Inc",
+              "timestamp": "2026-04-21T12:15:27.456Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:27.456Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 7,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 6
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Apple Inc\" completed across 6/6 data sources. 20 data points collected. Overall risk assessment: LOW RISK (7/100). No major risk indicators found.",
+      "createdAt": "2026-04-21T12:15:27.441Z",
+      "status": "complete",
+      "completedAt": "2026-04-21T12:15:28.659Z"
+    },
+    {
+      "id": "c83ba8f3-6cf8-448b-8dc8-1e2bff9052c7",
+      "entity": {
+        "name": "Apple Inc",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "cedac1a6-b132-4cf7-968b-f23c4fa43540",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/company/apple-inc",
+              "sourceUrl": "https://www.linkedin.com/company/apple-inc",
+              "timestamp": "2026-04-21T12:15:17.592Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "5b128283-d661-485a-802c-fcc1d182d9e6",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Apple Inc\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Apple%20Inc&src=typed_query",
+              "timestamp": "2026-04-21T12:15:17.592Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "8ceb65bb-a2a1-4984-bb5d-2eb96fb74959",
+              "title": "Wikidata: Apple Inc.",
+              "value": "American multinational technology company based in Cupertino, California",
+              "sourceUrl": "http://www.wikidata.org/entity/Q312",
+              "timestamp": "2026-04-21T12:15:17.592Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "d601c934-f847-4096-9027-f31772ec9733",
+              "title": "Wikidata: Apple media event",
+              "value": "type of periodical livestreamed special event held by Apple Inc.",
+              "sourceUrl": "http://www.wikidata.org/entity/Q62033032",
+              "timestamp": "2026-04-21T12:15:17.592Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "1d4e4fb5-ea43-4a6e-8aa8-103cedf3da5c",
+              "title": "Company Match: Apple Inclusion",
+              "value": "Domain: appleinclusion.com",
+              "sourceUrl": "https://appleinclusion.com",
+              "timestamp": "2026-04-21T12:15:17.592Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "8d0f6d67-b4be-47b0-9924-205af5592a04",
+              "title": "Company Match: Apple Inclusive",
+              "value": "Domain: appleinclusive.com",
+              "sourceUrl": "https://appleinclusive.com",
+              "timestamp": "2026-04-21T12:15:17.592Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "f1cbe848-54d1-46e5-9083-d210a8ccbd40",
+              "title": "Crunchbase (Company Intelligence)",
+              "value": "Search Apple Inc on Crunchbase for funding, investors & more",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations/field/organizations/facet_ids/company?q=Apple%20Inc",
+              "timestamp": "2026-04-21T12:15:17.592Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:17.592Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "b55265c5-b678-4407-a8d2-401eadd1ec3d",
+              "title": "Domain",
+              "value": "appleinc.com",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:17.598Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "67edc8ff-a3e3-46d4-b1e7-64055407a864",
+              "title": "Registrar",
+              "value": "GoDaddy.com, LLC",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:17.598Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "70f54a44-5baa-4495-818e-7fe34043e049",
+              "title": "Registered On",
+              "value": "9/8/2004",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:17.598Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "fdd321c8-9544-4f8d-9732-f4e54980aeea",
+              "title": "Expires On",
+              "value": "9/8/2026",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:17.598Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "5b28403a-036c-44d9-ab26-d443874662dd",
+              "title": "Name Servers",
+              "value": "NS1.AFTERNIC.COM, NS2.AFTERNIC.COM",
+              "sourceUrl": "https://rdap.org/domain/appleinc.com",
+              "timestamp": "2026-04-21T12:15:17.598Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "dbc2c4f8-cec8-4e66-9954-8af7fb440495",
+              "title": "DNS A Records (IPv4)",
+              "value": "76.223.54.146, 13.248.169.48",
+              "sourceUrl": "https://cloudflare-dns.com/dns-query?name=appleinc.com&type=A",
+              "timestamp": "2026-04-21T12:15:17.598Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "949b73c9-a006-4fc8-b4af-dc2ab4ddddab",
+              "title": "MX Records (Mail)",
+              "value": "0 .",
+              "timestamp": "2026-04-21T12:15:17.598Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:17.597Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "0731eada-3d19-4435-86ed-0f7f0e0cf777",
+              "title": "GitHub Organization",
+              "value": "@appleinc — 0 public repositories",
+              "sourceUrl": "https://github.com/appleinc",
+              "timestamp": "2026-04-21T12:15:17.600Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:17.600Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "2605d505-ae53-4241-912f-7492ea539c71",
+              "title": "No Known Data Breaches",
+              "value": "Domain appleinc.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-21T12:15:17.602Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:17.602Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "a0aed4e2-3c90-41f9-bdbf-8ed7ee89b9b3",
+              "title": "Wikipedia: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorp…",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-21T12:15:17.605Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:17.605Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "e3085aea-7082-420e-88ad-4ca1cd93706b",
+              "title": "SEC EDGAR Filings Found",
+              "value": "100 filing(s) found. Latest: undefined on 2025-10-31",
+              "sourceUrl": "https://efts.sec.gov/LATEST/search-index?q=%22Apple%20Inc%22",
+              "timestamp": "2026-04-21T12:15:17.607Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "f4f3b535-6983-428f-b304-49485730e336",
+              "title": "SEC EDGAR Search",
+              "value": "View Apple Inc public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Apple%20Inc&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-21T12:15:17.607Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "9d8c4641-16b4-49ed-9471-bceffa4c2f69",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Apple Inc against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Apple%20Inc",
+              "timestamp": "2026-04-21T12:15:17.607Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T12:15:17.607Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 7,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 6
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Apple Inc\" completed across 6/6 data sources. 20 data points collected. Overall risk assessment: LOW RISK (7/100). No major risk indicators found.",
+      "createdAt": "2026-04-21T12:15:17.592Z",
+      "status": "complete",
+      "completedAt": "2026-04-21T12:15:24.671Z"
+    },
+    {
       "id": "7dc4524f-457a-4d26-b231-f2d6f17dded4",
       "entity": {
         "name": "Elon Musk",
@@ -527,6 +1249,36 @@
     }
   ],
   "history": [
+    {
+      "id": "aa7c23ad-ef9c-4d7a-92f1-41c1acc09ca8",
+      "entityName": "Prajwol Koirala",
+      "entityType": "individual",
+      "riskScore": 8,
+      "dataPointCount": 13,
+      "adapterCount": 6,
+      "createdAt": "2026-04-21T12:15:45.105Z",
+      "status": "complete"
+    },
+    {
+      "id": "e6933226-2e11-43e9-8313-f0e78e824a6e",
+      "entityName": "Apple Inc",
+      "entityType": "company",
+      "riskScore": 7,
+      "dataPointCount": 20,
+      "adapterCount": 6,
+      "createdAt": "2026-04-21T12:15:27.441Z",
+      "status": "complete"
+    },
+    {
+      "id": "c83ba8f3-6cf8-448b-8dc8-1e2bff9052c7",
+      "entityName": "Apple Inc",
+      "entityType": "company",
+      "riskScore": 7,
+      "dataPointCount": 20,
+      "adapterCount": 6,
+      "createdAt": "2026-04-21T12:15:17.592Z",
+      "status": "complete"
+    },
     {
       "id": "7dc4524f-457a-4d26-b231-f2d6f17dded4",
       "entityName": "Elon Musk",
