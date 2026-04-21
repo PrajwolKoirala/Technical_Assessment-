@@ -1,5 +1,6 @@
+import { db } from "@/lib/db/index";
 import { NextRequest, NextResponse } from "next/server";
-import { db } from "@/lib/db";
+// import { db } from "@/lib/db";
 
 export async function GET(req: NextRequest) {
   try {
@@ -7,8 +8,7 @@ export async function GET(req: NextRequest) {
     const q = searchParams.get("q");
     const limit = parseInt(searchParams.get("limit") ?? "50", 10);
 
-    const history = q ? db.searchHistory(q) : db.getHistory(limit);
-
+const history = q ? await db.searchHistory(q) : await db.getHistory(limit);
     return NextResponse.json({ success: true, data: history });
   } catch (err) {
     console.error("[/api/history]", err);

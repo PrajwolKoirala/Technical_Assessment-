@@ -97,7 +97,7 @@ Open [http://localhost:3000](http://localhost:3000).
 npx vercel --prod
 ```
 
-> For production: replace `src/lib/db.ts` with Vercel Postgres or Supabase for persistent storage across serverless invocations.
+> For production:We will replace `src/lib/db.ts` with Vercel Postgres or NeonDB with Prisma for persistent storage across serverless invocations.
 
 ---
 

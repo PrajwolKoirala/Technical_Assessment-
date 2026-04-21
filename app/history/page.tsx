@@ -3,13 +3,24 @@
 import { useEffect, useState } from "react";
 import { useOsintStore } from "@/store/osintStore";
 import { useRouter } from "next/navigation";
-import { Building2, User, Trash2, Search, ExternalLink, Clock } from "lucide-react";
+import {
+  Building2,
+  User,
+  Trash2,
+  Search,
+  ExternalLink,
+  Clock,
+} from "lucide-react";
 import { SearchHistoryEntry } from "@/types";
 
 function RiskPill({ score }: { score: number }) {
-  const c = score >= 70 ? "text-red-400 bg-red-500/10 border-red-500/30"
-    : score >= 40 ? "text-orange-400 bg-orange-500/10 border-orange-500/30"
-    : "text-emerald-400 bg-emerald-500/10 border-emerald-500/30";
+  const c =
+    score >= 70
+      ? "text-red-400 bg-red-500/10 border-red-500/30"
+      : score >= 40
+      ? "text-orange-400 bg-orange-500/10 border-orange-500/30"
+      : "text-emerald-400 bg-emerald-500/10 border-emerald-500/30";
+
   return (
     <span className={`text-xs font-mono font-bold border rounded px-2 py-0.5 ${c}`}>
       {score}/100
@@ -18,15 +29,31 @@ function RiskPill({ score }: { score: number }) {
 }
 
 export default function HistoryPage() {
-  const { history, historyLoading, loadHistory, deleteHistoryEntry, loadResult } = useOsintStore();
+  const {
+    history,
+    historyLoading,
+    loadHistory,
+    deleteHistoryEntry,
+    loadResult,
+  } = useOsintStore();
+
   const [query, setQuery] = useState("");
   const router = useRouter();
 
-  useEffect(() => { loadHistory(); }, []);
+  useEffect(() => {
+    loadHistory();
+  }, [loadHistory]);
+
+  // ✅ SAFE fallback (prevents crash)
+  const safeHistory: SearchHistoryEntry[] = Array.isArray(history)
+    ? history
+    : [];
 
   const filtered = query
-    ? history.filter((h) => h.entityName.toLowerCase().includes(query.toLowerCase()))
-    : history;
+    ? safeHistory.filter((h) =>
+        h.entityName.toLowerCase().includes(query.toLowerCase())
+      )
+    : safeHistory;
 
   async function handleOpen(entry: SearchHistoryEntry) {
     await loadResult(entry.id);
@@ -35,14 +62,23 @@ export default function HistoryPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-8 animate-fade-in">
+      
+      {/* Header */}
       <div className="space-y-1">
-        <h1 className="text-3xl font-black tracking-tight">Search History</h1>
-        <p className="text-slate-400 text-sm">All past OSINT investigations stored locally.</p>
+        <h1 className="text-3xl font-black tracking-tight">
+          Search History
+        </h1>
+        <p className="text-slate-400 text-sm">
+          All past OSINT investigations stored locally.
+        </p>
       </div>
 
-      {/* Search bar */}
+      {/* Search */}
       <div className="relative">
-        <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" />
+        <Search
+          size={16}
+          className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"
+        />
         <input
           type="text"
           value={query}
@@ -52,19 +88,27 @@ export default function HistoryPage() {
         />
       </div>
 
+      {/* Loading */}
       {historyLoading && (
-        <div className="text-center text-slate-500 font-mono text-sm py-10">Loading history…</div>
+        <div className="text-center text-slate-500 font-mono text-sm py-10">
+          Loading history…
+        </div>
       )}
 
+      {/* Empty state */}
       {!historyLoading && filtered.length === 0 && (
         <div className="text-center py-20 space-y-3">
           <p className="text-slate-500 text-sm">No searches yet.</p>
-          <a href="/" className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-sm">
+          <a
+            href="/"
+            className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 text-sm"
+          >
             <Search size={14} /> Start your first investigation
           </a>
         </div>
       )}
 
+      {/* List */}
       <div className="space-y-3">
         {filtered.map((entry) => (
           <div
@@ -72,30 +116,59 @@ export default function HistoryPage() {
             className="group flex items-center justify-between gap-4 rounded-2xl border border-slate-700/60 bg-slate-800/40 hover:bg-slate-800/80 hover:border-slate-600 transition-all p-4 cursor-pointer"
             onClick={() => handleOpen(entry)}
           >
+            {/* Left */}
             <div className="flex items-center gap-4 min-w-0">
               <div className="w-10 h-10 rounded-xl bg-slate-700/80 border border-slate-600 flex items-center justify-center shrink-0">
-                {entry.entityType === "company"
-                  ? <Building2 size={18} className="text-cyan-400" />
-                  : <User size={18} className="text-violet-400" />}
+                {entry.entityType === "company" ? (
+                  <Building2 size={18} className="text-cyan-400" />
+                ) : (
+                  <User size={18} className="text-violet-400" />
+                )}
               </div>
+
               <div className="min-w-0">
-                <p className="font-semibold text-slate-200 truncate">{entry.entityName}</p>
-                <div className="flex items-center gap-3 mt-0.5">
-                  <span className="text-xs text-slate-500 capitalize font-mono">{entry.entityType}</span>
+                <p className="font-semibold text-slate-200 truncate">
+                  {entry.entityName}
+                </p>
+
+                <div className="flex items-center gap-3 mt-0.5 flex-wrap">
+                  <span className="text-xs text-slate-500 capitalize font-mono">
+                    {entry.entityType}
+                  </span>
+
                   <span className="text-xs text-slate-500 font-mono flex items-center gap-1">
                     <Clock size={10} />
-                    {new Date(entry.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                    {new Date(entry.createdAt).toLocaleDateString(
+                      "en-US",
+                      {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric",
+                      }
+                    )}
                   </span>
-                  <span className="text-xs text-slate-500 font-mono">{entry.dataPointCount} findings</span>
+
+                  <span className="text-xs text-slate-500 font-mono">
+                    {entry.dataPointCount} findings
+                  </span>
                 </div>
               </div>
             </div>
 
+            {/* Right */}
             <div className="flex items-center gap-3 shrink-0">
               <RiskPill score={entry.riskScore} />
-              <ExternalLink size={15} className="text-slate-500 group-hover:text-cyan-400 transition-colors" />
+
+              <ExternalLink
+                size={15}
+                className="text-slate-500 group-hover:text-cyan-400 transition-colors"
+              />
+
               <button
-                onClick={(e) => { e.stopPropagation(); deleteHistoryEntry(entry.id); }}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  deleteHistoryEntry(entry.id);
+                }}
                 className="text-slate-600 hover:text-red-400 transition-colors p-1.5 rounded-lg hover:bg-red-500/10"
               >
                 <Trash2 size={15} />

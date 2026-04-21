@@ -7,7 +7,7 @@
 import { v4 as uuid } from "uuid";
 import { registry } from "./adapters";
 import { computeRiskScore, generateSummary } from "./scoring";
-import { db } from "./db";
+import { db } from "./db/index";
 import { SearchEntity, SearchResult } from "@/types";
 
 export async function runSearch(entity: SearchEntity): Promise<SearchResult> {
@@ -63,6 +63,6 @@ export async function runSearch(entity: SearchEntity): Promise<SearchResult> {
     status: "complete",
   };
 
-  db.saveSearch(result);
+await db.saveSearch(result);
   return result;
 }

@@ -1,6 +1,223 @@
 {
   "searches": [
     {
+      "id": "b1e7f104-d2e8-41f7-9ed2-c00956888c31",
+      "entity": {
+        "name": "AiGeeks",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "11fe092c-bc5c-464b-a7b3-7eb4e1f1d9ce",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/company/aigeeks",
+              "sourceUrl": "https://www.linkedin.com/company/aigeeks",
+              "timestamp": "2026-04-21T17:32:06.170Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "2bf7e7c5-d692-4d80-a0ad-a295832f2952",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"AiGeeks\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=AiGeeks&src=typed_query",
+              "timestamp": "2026-04-21T17:32:06.170Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "4c7d95b4-ea32-4014-850c-4dea9fe8dddf",
+              "title": "Company Match: aigeekslab",
+              "value": "Domain: aigeekslab.com",
+              "sourceUrl": "https://aigeekslab.com",
+              "timestamp": "2026-04-21T17:32:06.170Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "11f65dd9-86fd-45d9-b3a2-707bd1c09094",
+              "title": "Crunchbase (Company Intelligence)",
+              "value": "Search AiGeeks on Crunchbase for funding, investors & more",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations/field/organizations/facet_ids/company?q=AiGeeks",
+              "timestamp": "2026-04-21T17:32:06.170Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T17:32:06.169Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "0ec575ba-02a7-4a38-a12c-619966afa5b3",
+              "title": "Domain",
+              "value": "aigeeks.com",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T17:32:06.207Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "ac93af78-77f5-4e14-a1d8-d5ba81db7802",
+              "title": "Registrar",
+              "value": "GoDaddy.com, LLC",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T17:32:06.207Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "39460582-50c5-479e-ab3e-ceed767cc5b9",
+              "title": "Registered On",
+              "value": "4/27/2016",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T17:32:06.207Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "6c5bd664-6961-4315-ac85-e1d90990cf9a",
+              "title": "Expires On",
+              "value": "4/27/2027",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T17:32:06.207Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "880366e1-8420-4ba1-8797-a3234511bf52",
+              "title": "Name Servers",
+              "value": "NS47.DOMAINCONTROL.COM, NS48.DOMAINCONTROL.COM",
+              "sourceUrl": "https://rdap.org/domain/aigeeks.com",
+              "timestamp": "2026-04-21T17:32:06.207Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "833d8206-07ae-43cb-81f1-f24728ab07ab",
+              "title": "DNS A Records (IPv4)",
+              "value": "162.159.140.166",
+              "sourceUrl": "https://cloudflare-dns.com/dns-query?name=aigeeks.com&type=A",
+              "timestamp": "2026-04-21T17:32:06.207Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T17:32:06.207Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "9bfb3270-d80f-456f-84db-73a153e3416c",
+              "title": "GitHub Organization",
+              "value": "@AIGEEKS — 0 public repositories",
+              "sourceUrl": "https://github.com/AIGEEKS",
+              "timestamp": "2026-04-21T17:32:06.210Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-21T17:32:06.210Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "5287caed-cb79-4056-ac9d-2b52bc5b7fc8",
+              "title": "No Known Data Breaches",
+              "value": "Domain aigeeks.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-21T17:32:06.212Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-21T17:32:06.212Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "d29a26e3-aba8-4e01-a971-9c0b7f3b1c68",
+              "title": "News Search",
+              "value": "Set NEWS_API_KEY or GNEWS_API_KEY in .env.local for full news coverage of \"AiGeeks\"",
+              "timestamp": "2026-04-21T17:32:06.214Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T17:32:06.213Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "AiGeeks",
+          "status": "success",
+          "data": [
+            {
+              "id": "d47f325c-223c-40e6-89b2-2920da413000",
+              "title": "SEC EDGAR Search",
+              "value": "View AiGeeks public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=AiGeeks&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-21T17:32:06.217Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "f71e3be8-c3c6-4151-b7ef-e5971f13ba56",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify AiGeeks against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=AiGeeks",
+              "timestamp": "2026-04-21T17:32:06.217Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-21T17:32:06.217Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 8,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 8
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"AiGeeks\" completed across 6/6 data sources. 15 data points collected. Overall risk assessment: LOW RISK (8/100). No major risk indicators found.",
+      "createdAt": "2026-04-21T17:32:06.169Z",
+      "status": "complete",
+      "completedAt": "2026-04-21T17:32:10.877Z"
+    },
+    {
       "id": "f5095cb4-ee5a-4f6b-bc8a-0e189cf6da6f",
       "entity": {
         "name": "Apple Inc",
@@ -1511,6 +1728,16 @@
     }
   ],
   "history": [
+    {
+      "id": "b1e7f104-d2e8-41f7-9ed2-c00956888c31",
+      "entityName": "AiGeeks",
+      "entityType": "company",
+      "riskScore": 8,
+      "dataPointCount": 15,
+      "adapterCount": 6,
+      "createdAt": "2026-04-21T17:32:06.169Z",
+      "status": "complete"
+    },
     {
       "id": "f5095cb4-ee5a-4f6b-bc8a-0e189cf6da6f",
       "entityName": "Apple Inc",

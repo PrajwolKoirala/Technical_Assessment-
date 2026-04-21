@@ -6,6 +6,8 @@ interface OsintStore {
   searchName: string;
   searchType: EntityType;
   isSearching: boolean;
+  isResultLoading: boolean;
+
   currentResult: SearchResult | null;
   searchError: string | null;
 
@@ -31,6 +33,7 @@ export const useOsintStore = create<OsintStore>((set, get) => ({
   searchError: null,
   history: [],
   historyLoading: false,
+  isResultLoading: false,
 
   setSearchName: (name) => set({ searchName: name }),
   setSearchType: (type) => set({ searchType: type }),
@@ -78,19 +81,29 @@ export const useOsintStore = create<OsintStore>((set, get) => ({
     set((s) => ({ history: s.history.filter((h) => h.id !== id) }));
   },
 
-  loadResult: async (id) => {
-    try {
-      const res = await fetch(`/api/results/${id}`);
-      const json = await res.json();
-      if (json.success) {
-        set({ currentResult: json.data });
-        return json.data as SearchResult;
-      }
-    } catch {
-      // ignore
+ loadResult: async (id) => {
+  set({ isResultLoading: true });
+
+  try {
+    const res = await fetch(`/api/results/${id}`);
+    const json = await res.json();
+
+    if (json.success) {
+      set({
+        currentResult: json.data,
+        isResultLoading: false,
+      });
+
+      return json.data as SearchResult;
     }
-    return null;
-  },
+
+    set({ isResultLoading: false });
+  } catch {
+    set({ isResultLoading: false });
+  }
+
+  return null;
+},
 
   clearCurrentResult: () => set({ currentResult: null }),
 }));
