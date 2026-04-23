@@ -2,10 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { runSearch } from "@/lib/orchestrator";
 import { SearchApiRequest } from "@/types";
 
-export const maxDuration = 60; // Vercel: allow up to 60s for parallel adapters
+export const maxDuration = 60;
 
 export async function POST(req: NextRequest) {
-  try { 
+  try {
     const body = (await req.json()) as SearchApiRequest;
 
     if (!body.name || typeof body.name !== "string" || body.name.trim().length < 2) {
@@ -20,7 +20,7 @@ export async function POST(req: NextRequest) {
         { success: false, error: 'Type must be "company" or "individual"' },
         { status: 400 }
       );
-    } 
+    }
 
     const result = await runSearch({ name: body.name.trim(), type: body.type });
 
@@ -33,4 +33,3 @@ export async function POST(req: NextRequest) {
     );
   }
 }
- 

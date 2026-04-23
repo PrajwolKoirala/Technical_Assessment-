@@ -1,6 +1,168 @@
 {
   "searches": [
     {
+      "id": "d100db87-3279-44f2-80a7-699b29347bdd",
+      "entity": {
+        "name": "Travis Haasch",
+        "type": "individual"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "2038f3f8-5522-4df0-bee9-c85cb42a339d",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/in/travis-haasch",
+              "sourceUrl": "https://www.linkedin.com/in/travis-haasch",
+              "timestamp": "2026-04-23T08:58:22.433Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "086819c2-d875-40fd-b7eb-b0dfa4d1b192",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Travis Haasch\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Travis%20Haasch&src=typed_query",
+              "timestamp": "2026-04-23T08:58:22.433Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T08:58:22.433Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "10e02719-511e-43c4-8ec6-ab3a0b9082b3",
+              "title": "DNS Status",
+              "value": "Domain may not exist (status 3)",
+              "timestamp": "2026-04-23T08:58:22.439Z",
+              "riskLevel": "medium",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T08:58:22.438Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "100bf204-4c97-4c18-aaa7-c1c29556499a",
+              "title": "GitHub Profile",
+              "value": "travishaasch — 1 repos, 1 followers",
+              "sourceUrl": "https://github.com/travishaasch",
+              "timestamp": "2026-04-23T08:58:22.445Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "facbaabb-bdf5-430a-85d5-cf1a3770c98b",
+              "title": "Repo: marsa",
+              "value": "No description (★ 0)",
+              "sourceUrl": "https://github.com/travishaasch/marsa",
+              "timestamp": "2025-02-11T15:06:21Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T08:58:22.443Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "13a7c997-c4a6-45c0-bab5-9494a9d2f0fb",
+              "title": "No Known Data Breaches",
+              "value": "Domain travishaasch.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-23T08:58:22.448Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T08:58:22.448Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "3c6e913f-9673-4e5a-8d8b-1ddddfed262b",
+              "title": "News Search",
+              "value": "Set NEWS_API_KEY or GNEWS_API_KEY in .env.local for full news coverage of \"Travis Haasch\"",
+              "timestamp": "2026-04-23T08:58:22.450Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T08:58:22.450Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "4bce99e0-dc37-4016-b0a0-7827d872d031",
+              "title": "SEC EDGAR Search",
+              "value": "View Travis Haasch public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Travis%20Haasch&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-23T08:58:22.453Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "0b41ddfe-396f-4b1c-89ed-8ca97a07e2a0",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Travis Haasch against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Travis%20Haasch",
+              "timestamp": "2026-04-23T08:58:22.453Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T08:58:22.452Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 9,
+        "breakdown": {
+          "social": 5,
+          "technical": 14,
+          "regulatory": 8
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Travis Haasch\" completed across 6/6 data sources. 9 data points collected. Overall risk assessment: LOW RISK (9/100). No major risk indicators found.",
+      "createdAt": "2026-04-23T08:58:22.432Z",
+      "status": "complete",
+      "completedAt": "2026-04-23T08:58:29.944Z"
+    },
+    {
       "id": "803942ba-024e-4b11-a2e5-1bec4f17e16b",
       "entity": {
         "name": "travis hassach",
@@ -2448,6 +2610,16 @@
     }
   ],
   "history": [
+    {
+      "id": "d100db87-3279-44f2-80a7-699b29347bdd",
+      "entityName": "Travis Haasch",
+      "entityType": "individual",
+      "riskScore": 9,
+      "dataPointCount": 9,
+      "adapterCount": 6,
+      "createdAt": "2026-04-23T08:58:22.432Z",
+      "status": "complete"
+    },
     {
       "id": "803942ba-024e-4b11-a2e5-1bec4f17e16b",
       "entityName": "travis hassach",
