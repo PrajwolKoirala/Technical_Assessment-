@@ -11,32 +11,32 @@ datasource db {
 
 // ─── Full search result (heavy — capped at 200 rows) ────────────────────────
 
+
 model Search {
-  id          String   @id
+  id          String   @id @default(cuid())
   entityName  String
   entityType  String   // "company" | "individual"
-  status      String   // "pending" | "running" | "complete" | "error"
-  summary     String
-  createdAt   DateTime
+  status      String   @default("complete")
+  summary     String?  @db.Text
+  riskOverall Int      @default(0)
+  riskSocial  Int      @default(0)
+  riskTech    Int      @default(0)
+  riskReg     Int      @default(0)
+  highCount   Int      @default(0)
+  critCount   Int      @default(0)
+  createdAt   DateTime @default(now())
   completedAt DateTime?
 
-  // RiskScore stored as flat columns (avoids a join for the common read path)
-  riskOverall        Int
-  riskSocial         Int
-  riskTechnical      Int
-  riskRegulatory     Int
-  highRiskCount      Int
-  criticalRiskCount  Int
+  // Entity profile (resolved)
+  profileImage  String?
+  profileBio    String?  @db.Text
+  profileUrl    String?
+  profileLocation String?
 
-  // AdapterResult[] serialised as JSON (avoids many join tables for a read-heavy workload)
-  resultsJson String   // JSON.stringify(AdapterResult[])
-
-  // Relation to lightweight history row
-  history SearchHistory?
-
-  @@map("searches")
+  findings    Finding[]
+  @@index([entityName])
+  @@index([createdAt])
 }
-
 // ─── Lightweight history entry (capped at 500 rows) ─────────────────────────
 
 model SearchHistory {
@@ -52,4 +52,26 @@ model SearchHistory {
   search   Search @relation(fields: [id], references: [id], onDelete: Cascade)
 
   @@map("search_history")
+}
+
+
+
+model Finding {
+  id         String   @id @default(cuid())
+  searchId   String
+  search     Search   @relation(fields: [searchId], references: [id], onDelete: Cascade)
+
+  title      String
+  value      String   @db.Text
+  sourceUrl  String?
+  sourceName String?  // "Google Search", "GitHub", etc.
+  category   String   // "social" | "technical" | "regulatory"
+  riskLevel  String   @default("low")
+  confidence String   @default("medium")
+  status     String   @default("needs_review") // "needs_review" | "confirmed" | "false_positive"
+  urlValid   Boolean  @default(true)
+  timestamp  DateTime @default(now())
+
+  @@index([searchId])
+  @@index([riskLevel])
 }

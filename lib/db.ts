@@ -1,114 +1,228 @@
-// /**
-//  * Database layer — uses lowdb (a pure-JS JSON file database) so the project
-//  * runs without any native build tools.  All reads/writes are synchronous and
-//  * wrapped in a singleton so the same file handle is reused across hot-reloads.
-//  */
 
-// import { join } from "path";
-// import { SearchResult, SearchHistoryEntry } from "@/types";
+import { join } from "path";
+import { SearchResult, AdapterResult } from "@/types";
 
-// // ─── tiny synchronous JSON store (no native deps) ───────────────────────────
+export interface EntityProfile {
+  image?: string;
+  bio?: string;
+  url?: string;
+  location?: string;
+  name?: string;
+}
 
-// const DB_PATH = join(process.cwd(), "data", "osint.db.json");
+export interface DbFinding {
+  id: string;
+  searchId: string;
+  title: string;
+  value: string;
+  sourceUrl: string | null;
+  sourceName: string | null;
+  category: string;
+  riskLevel: string;
+  confidence: string;
+  status: string;
+  urlValid: boolean;
+  timestamp: Date;
+}
 
-// interface DbSchema {
-//   searches: SearchResult[];
-//   history: SearchHistoryEntry[];
-// }
+export interface DbSearch {
+  id: string;
+  entityName: string;
+  entityType: string;
+  status: string;
+  summary: string | null;
+  riskOverall: number;
+  riskSocial: number;
+  riskTech: number;
+  riskReg: number;
+  highCount: number;
+  critCount: number;
+  createdAt: Date;
+  completedAt: Date | null;
+  profileImage: string | null;
+  profileBio: string | null;
+  profileUrl: string | null;
+  profileLocation: string | null;
+  findings?: DbFinding[];
+  rawResults?: AdapterResult[];
+}
 
-// function readDb(): DbSchema {
-//   try {
-//     // dynamic require keeps this server-only
-//     // eslint-disable-next-line @typescript-eslint/no-var-requires
-//     const fs = require("fs") as typeof import("fs");
-//     const dir = join(process.cwd(), "data");
-//     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-//     if (!fs.existsSync(DB_PATH)) {
-//       fs.writeFileSync(DB_PATH, JSON.stringify({ searches: [], history: [] }));
-//     }
-//     return JSON.parse(fs.readFileSync(DB_PATH, "utf-8")) as DbSchema;
-//   } catch {
-//     return { searches: [], history: [] };
-//   }
-// }
+// ─── Prisma lazy singleton ────────────────────────────────────────────────────
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+let _prisma: any = null;
 
-// function writeDb(data: DbSchema): void {
-//   // eslint-disable-next-line @typescript-eslint/no-var-requires
-//   const fs = require("fs") as typeof import("fs");
-//   fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
-// }
+function getPrisma() {
+  if (!process.env.DATABASE_URL) return null;
+  if (_prisma) return _prisma;
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    const { PrismaClient } = require("@prisma/client");
+    _prisma = new PrismaClient({ log: [] });
+    return _prisma;
+  } catch {
+    return null;
+  }
+}
 
-// // ─── public API ─────────────────────────────────────────────────────────────
+// ─── JSON fallback ────────────────────────────────────────────────────────────
+const DB_PATH = join(process.cwd(), "data", "osint.db.json");
 
-// export const db = {
-//   /** Persist a completed search result */
-//   saveSearch(result: SearchResult): void {
-//     const data = readDb();
-//     const existing = data.searches.findIndex((s) => s.id === result.id);
-//     if (existing >= 0) {
-//       data.searches[existing] = result;
-//     } else {
-//       data.searches.unshift(result);
-//     }
+function readJson(): { searches: DbSearch[] } {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const fs = require("fs") as typeof import("fs");
+  const dir = join(process.cwd(), "data");
+  if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+  if (!fs.existsSync(DB_PATH)) fs.writeFileSync(DB_PATH, JSON.stringify({ searches: [] }));
+  try { return JSON.parse(fs.readFileSync(DB_PATH, "utf-8")); } catch { return { searches: [] }; }
+}
 
-//     // keep only last 200 full results
-//     if (data.searches.length > 200) data.searches = data.searches.slice(0, 200);
+function writeJson(data: { searches: DbSearch[] }) {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const fs = require("fs") as typeof import("fs");
+  fs.writeFileSync(DB_PATH, JSON.stringify(data, null, 2));
+}
 
-//     // upsert history entry
-//     const historyEntry: SearchHistoryEntry = {
-//       id: result.id,
-//       entityName: result.entity.name,
-//       entityType: result.entity.type,
-//       riskScore: result.riskScore.overall,
-//       dataPointCount: result.results.reduce((acc, r) => acc + r.data.length, 0),
-//       adapterCount: result.results.length,
-//       createdAt: result.createdAt,
-//       status: result.status === "error" ? "error" : "complete",
-//     };
+// ─── Public DB API ────────────────────────────────────────────────────────────
+export const db = {
+  async saveSearch(result: SearchResult, profile: EntityProfile): Promise<void> {
+    const prisma = getPrisma();
+    const allFindings: DbFinding[] = result.results.flatMap((r) =>
+      r.data.map((dp) => ({
+        id: dp.id,
+        searchId: result.id,
+        title: dp.title,
+        value: dp.value,
+        sourceUrl: dp.sourceUrl ?? null,
+        sourceName: r.adapterName,
+        category: r.category,
+        riskLevel: dp.riskLevel,
+        confidence: dp.confidence,
+        status: "needs_review",
+        urlValid: dp.urlValid !== false,
+        timestamp: new Date(dp.timestamp),
+      }))
+    );
 
-//     const hi = data.history.findIndex((h) => h.id === result.id);
-//     if (hi >= 0) {
-//       data.history[hi] = historyEntry;
-//     } else {
-//       data.history.unshift(historyEntry);
-//     }
-//     if (data.history.length > 500) data.history = data.history.slice(0, 500);
+    if (prisma) {
+      await prisma.search.upsert({
+        where: { id: result.id },
+        create: {
+          id: result.id,
+          entityName: result.entity.name,
+          entityType: result.entity.type,
+          status: result.status,
+          summary: result.summary,
+          riskOverall: result.riskScore.overall,
+          riskSocial: result.riskScore.breakdown.social,
+          riskTech: result.riskScore.breakdown.technical,
+          riskReg: result.riskScore.breakdown.regulatory,
+          highCount: result.riskScore.highRiskCount,
+          critCount: result.riskScore.criticalRiskCount,
+          completedAt: result.completedAt ? new Date(result.completedAt) : null,
+          profileImage: profile.image ?? null,
+          profileBio: profile.bio ?? null,
+          profileUrl: profile.url ?? null,
+          profileLocation: profile.location ?? null,
+          findings: { create: allFindings.map(({ searchId: _, ...f }) => ({ ...f })) },
+        },
+        update: {
+          status: result.status,
+          summary: result.summary,
+          riskOverall: result.riskScore.overall,
+          profileImage: profile.image ?? null,
+          profileBio: profile.bio ?? null,
+          profileUrl: profile.url ?? null,
+          profileLocation: profile.location ?? null,
+        },
+      });
+    } else {
+      const data = readJson();
+      const idx = data.searches.findIndex((s) => s.id === result.id);
+      const record: DbSearch = {
+        id: result.id,
+        entityName: result.entity.name,
+        entityType: result.entity.type,
+        status: result.status,
+        summary: result.summary ?? null,
+        riskOverall: result.riskScore.overall,
+        riskSocial: result.riskScore.breakdown.social,
+        riskTech: result.riskScore.breakdown.technical,
+        riskReg: result.riskScore.breakdown.regulatory,
+        highCount: result.riskScore.highRiskCount,
+        critCount: result.riskScore.criticalRiskCount,
+        createdAt: new Date(result.createdAt),
+        completedAt: result.completedAt ? new Date(result.completedAt) : null,
+        profileImage: profile.image ?? null,
+        profileBio: profile.bio ?? null,
+        profileUrl: profile.url ?? null,
+        profileLocation: profile.location ?? null,
+        findings: allFindings,
+        rawResults: result.results,
+      };
+      if (idx >= 0) data.searches[idx] = record;
+      else data.searches.unshift(record);
+      if (data.searches.length > 200) data.searches = data.searches.slice(0, 200);
+      writeJson(data);
+    }
+  },
 
-//     writeDb(data);
-//   },
+  async getSearch(id: string): Promise<DbSearch | null> {
+    const prisma = getPrisma();
+    if (prisma) {
+      return await prisma.search.findUnique({
+        where: { id },
+        include: { findings: { orderBy: { timestamp: "desc" } } },
+      });
+    }
+    return readJson().searches.find((s) => s.id === id) ?? null;
+  },
 
-//   /** Get a single search by id */
-//   getSearch(id: string): SearchResult | null {
-//     const data = readDb();
-//     return data.searches.find((s) => s.id === id) ?? null;
-//   },
+  async getHistory(limit = 50): Promise<DbSearch[]> {
+    const prisma = getPrisma();
+    if (prisma) {
+      return await prisma.search.findMany({
+        orderBy: { createdAt: "desc" },
+        take: limit,
+      });
+    }
+    return readJson().searches.slice(0, limit);
+  },
 
-//   /** Get recent searches (full result objects) */
-//   getRecentSearches(limit = 20): SearchResult[] {
-//     const data = readDb();
-//     return data.searches.slice(0, limit);
-//   },
+  async searchHistory(query: string): Promise<DbSearch[]> {
+    const prisma = getPrisma();
+    if (prisma) {
+      return await prisma.search.findMany({
+        where: { entityName: { contains: query, mode: "insensitive" } },
+        orderBy: { createdAt: "desc" },
+        take: 20,
+      });
+    }
+    const q = query.toLowerCase();
+    return readJson().searches.filter((s) => s.entityName.toLowerCase().includes(q));
+  },
 
-//   /** Get history list (lightweight) */
-//   getHistory(limit = 50): SearchHistoryEntry[] {
-//     const data = readDb();
-//     return data.history.slice(0, limit);
-//   },
+  async deleteSearch(id: string): Promise<void> {
+    const prisma = getPrisma();
+    if (prisma) {
+      await prisma.search.delete({ where: { id } });
+    } else {
+      const data = readJson();
+      data.searches = data.searches.filter((s) => s.id !== id);
+      writeJson(data);
+    }
+  },
 
-//   /** Delete a search by id */
-//   deleteSearch(id: string): void {
-//     const data = readDb();
-//     data.searches = data.searches.filter((s) => s.id !== id);
-//     data.history = data.history.filter((h) => h.id !== id);
-//     writeDb(data);
-//   },
-
-//   /** Full-text search over history */
-//   searchHistory(query: string): SearchHistoryEntry[] {
-//     const data = readDb();
-//     const q = query.toLowerCase();
-//     return data.history.filter((h) =>
-//       h.entityName.toLowerCase().includes(q)
-//     );
-//   },
-// };
+  async updateFindingStatus(findingId: string, status: string): Promise<void> {
+    const prisma = getPrisma();
+    if (prisma) {
+      await prisma.finding.update({ where: { id: findingId }, data: { status } });
+    } else {
+      const data = readJson();
+      for (const s of data.searches) {
+        const f = s.findings?.find((f) => f.id === findingId);
+        if (f) { f.status = status; break; }
+      }
+      writeJson(data);
+    }
+  },
+};

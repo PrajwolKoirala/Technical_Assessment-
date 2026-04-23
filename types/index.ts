@@ -1,7 +1,3 @@
-// ─────────────────────────────────────────────────────────────────────────────
-// Core Entity Types
-// ─────────────────────────────────────────────────────────────────────────────
-
 export type EntityType = "company" | "individual";
 
 export interface SearchEntity {
@@ -9,26 +5,21 @@ export interface SearchEntity {
   type: EntityType;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Adapter / Data Source Types
-// ─────────────────────────────────────────────────────────────────────────────
-
-export type AdapterCategory =
-  | "social"       // Social & Public Footprint
-  | "technical"    // Technical Infrastructure
-  | "regulatory";  // Contextual & Regulatory
-
+export type AdapterCategory = "social" | "technical" | "regulatory";
 export type RiskLevel = "low" | "medium" | "high" | "critical" | "unknown";
 export type ConfidenceLevel = "low" | "medium" | "high";
+export type FindingStatus = "needs_review" | "confirmed" | "false_positive";
 
 export interface DataPoint {
   id: string;
   title: string;
   value: string;
   sourceUrl?: string;
+  sourceName?: string;
   timestamp: string;
   riskLevel: RiskLevel;
   confidence: ConfidenceLevel;
+  urlValid?: boolean;     // set by URL validator
   raw?: Record<string, unknown>;
 }
 
@@ -43,19 +34,20 @@ export interface AdapterResult {
   fetchedAt: string;
 }
 
-// ─────────────────────────────────────────────────────────────────────────────
-// Search / Report Types
-// ─────────────────────────────────────────────────────────────────────────────
-
 export interface RiskScore {
-  overall: number;            // 0-100
-  breakdown: {
-    social: number;
-    technical: number;
-    regulatory: number;
-  };
+  overall: number;
+  breakdown: { social: number; technical: number; regulatory: number };
   highRiskCount: number;
   criticalRiskCount: number;
+}
+
+export interface EntityProfile {
+  image?: string;
+  bio?: string;
+  url?: string;
+  location?: string;
+  name?: string;
+  tags?: string[];
 }
 
 export interface SearchResult {
@@ -64,14 +56,11 @@ export interface SearchResult {
   results: AdapterResult[];
   riskScore: RiskScore;
   summary: string;
+  profile?: EntityProfile;
   createdAt: string;
   completedAt?: string;
   status: "pending" | "running" | "complete" | "error";
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// Database / History Types
-// ─────────────────────────────────────────────────────────────────────────────
 
 export interface SearchHistoryEntry {
   id: string;
@@ -82,11 +71,8 @@ export interface SearchHistoryEntry {
   adapterCount: number;
   createdAt: string;
   status: "complete" | "error";
+  profileImage?: string;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// API Response Types
-// ─────────────────────────────────────────────────────────────────────────────
 
 export interface ApiResponse<T> {
   success: boolean;

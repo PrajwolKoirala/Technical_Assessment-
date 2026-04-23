@@ -1,6 +1,726 @@
 {
   "searches": [
     {
+      "id": "803942ba-024e-4b11-a2e5-1bec4f17e16b",
+      "entity": {
+        "name": "travis hassach",
+        "type": "individual"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "travis hassach",
+          "status": "success",
+          "data": [
+            {
+              "id": "c131dc03-3497-4132-a4b9-2ed6abddd8b6",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/in/travis-hassach",
+              "sourceUrl": "https://www.linkedin.com/in/travis-hassach",
+              "timestamp": "2026-04-23T04:24:48.101Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "6b08c527-038e-4e90-b7cd-7e3870653096",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"travis hassach\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=travis%20hassach&src=typed_query",
+              "timestamp": "2026-04-23T04:24:48.101Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:24:48.101Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "travis hassach",
+          "status": "success",
+          "data": [
+            {
+              "id": "4b5d5f02-388e-41da-9ece-2c77f4b3d1e8",
+              "title": "DNS Status",
+              "value": "Domain may not exist (status 3)",
+              "timestamp": "2026-04-23T04:24:48.105Z",
+              "riskLevel": "medium",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:24:48.105Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "travis hassach",
+          "status": "partial",
+          "data": [],
+          "fetchedAt": "2026-04-23T04:24:48.107Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "travis hassach",
+          "status": "success",
+          "data": [
+            {
+              "id": "81342719-5949-4b36-97ca-6971e8f6b6ff",
+              "title": "No Known Data Breaches",
+              "value": "Domain travishassach.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-23T04:24:48.109Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:24:48.109Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "travis hassach",
+          "status": "success",
+          "data": [
+            {
+              "id": "95a6fc84-8c45-4b74-93ad-f6b347f9c253",
+              "title": "News Search",
+              "value": "Set NEWS_API_KEY or GNEWS_API_KEY in .env.local for full news coverage of \"travis hassach\"",
+              "timestamp": "2026-04-23T04:24:48.113Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:24:48.113Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "travis hassach",
+          "status": "success",
+          "data": [
+            {
+              "id": "978c2b97-e31d-4c71-bc23-87c813a38f66",
+              "title": "SEC EDGAR Search",
+              "value": "View travis hassach public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=travis%20hassach&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-23T04:24:48.115Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "f5e92fad-7e42-4062-a874-c2ae609ba58c",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify travis hassach against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=travis%20hassach",
+              "timestamp": "2026-04-23T04:24:48.115Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:24:48.114Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 13,
+        "breakdown": {
+          "social": 5,
+          "technical": 23,
+          "regulatory": 8
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"travis hassach\" completed across 5/6 data sources. 7 data points collected. Overall risk assessment: LOW RISK (13/100). No major risk indicators found.",
+      "createdAt": "2026-04-23T04:24:48.101Z",
+      "status": "complete",
+      "completedAt": "2026-04-23T04:24:50.374Z"
+    },
+    {
+      "id": "4af058d1-659c-4ee7-846c-422e9a6b39ee",
+      "entity": {
+        "name": "SpaceX",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "SpaceX",
+          "status": "success",
+          "data": [
+            {
+              "id": "d885aabc-71db-4a6e-bdb1-367f12b1f1bf",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/company/spacex",
+              "sourceUrl": "https://www.linkedin.com/company/spacex",
+              "timestamp": "2026-04-23T04:23:08.005Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "aed89c9b-8ca1-459c-b8ed-0f53fd56fe86",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"SpaceX\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=SpaceX&src=typed_query",
+              "timestamp": "2026-04-23T04:23:08.005Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "f5f1ae57-d0ed-4ac3-996f-89ce2afcaf92",
+              "title": "Wikidata: SpaceX",
+              "value": "American private aerospace company",
+              "sourceUrl": "http://www.wikidata.org/entity/Q193701",
+              "timestamp": "2026-04-23T04:23:08.005Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "7d7e72c9-27e8-4b18-8390-aeca666be067",
+              "title": "Wikidata: Spacex",
+              "value": "contemporary art gallery in Devon, England",
+              "sourceUrl": "http://www.wikidata.org/entity/Q7572748",
+              "timestamp": "2026-04-23T04:23:08.005Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "01eac8a7-c8b5-46b9-abec-4ec7f8aa2400",
+              "title": "Company Match: SpaceX",
+              "value": "Domain: spacex.com",
+              "sourceUrl": "https://spacex.com",
+              "timestamp": "2026-04-23T04:23:08.005Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "e7c0a2b6-11c6-4878-acd9-7c8fdea60f09",
+              "title": "Company Match: SpaceXMania",
+              "value": "Domain: spacexmania.com",
+              "sourceUrl": "https://spacexmania.com",
+              "timestamp": "2026-04-23T04:23:08.005Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "aafc86dc-8bb9-4ef3-a2a8-488f8527c27b",
+              "title": "Crunchbase (Company Intelligence)",
+              "value": "Search SpaceX on Crunchbase for funding, investors & more",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations/field/organizations/facet_ids/company?q=SpaceX",
+              "timestamp": "2026-04-23T04:23:08.005Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:23:08.005Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "SpaceX",
+          "status": "success",
+          "data": [
+            {
+              "id": "4c66ccef-5644-4071-bb8a-9a822b819337",
+              "title": "Domain",
+              "value": "spacex.com",
+              "sourceUrl": "https://rdap.org/domain/spacex.com",
+              "timestamp": "2026-04-23T04:23:08.010Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "f0bba4fd-4401-479b-a917-3c38458d882b",
+              "title": "Registrar",
+              "value": "Network Solutions, LLC",
+              "sourceUrl": "https://rdap.org/domain/spacex.com",
+              "timestamp": "2026-04-23T04:23:08.010Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "ba03a492-6af5-4f61-8860-21143cae4aa6",
+              "title": "Registered On",
+              "value": "5/14/2002",
+              "sourceUrl": "https://rdap.org/domain/spacex.com",
+              "timestamp": "2026-04-23T04:23:08.010Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "49289d5c-2009-42da-840c-8dd7eb871c72",
+              "title": "Expires On",
+              "value": "5/14/2028",
+              "sourceUrl": "https://rdap.org/domain/spacex.com",
+              "timestamp": "2026-04-23T04:23:08.010Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "f06d465b-c271-4cb8-9d47-ad9566debe8b",
+              "title": "Name Servers",
+              "value": "NS-CLOUD-B1.GOOGLEDOMAINS.COM, NS-CLOUD-B2.GOOGLEDOMAINS.COM, NS-CLOUD-B3.GOOGLEDOMAINS.COM, NS-CLOUD-B4.GOOGLEDOMAINS.COM",
+              "sourceUrl": "https://rdap.org/domain/spacex.com",
+              "timestamp": "2026-04-23T04:23:08.010Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "57dbd120-7064-4af5-9b11-bacd5243c367",
+              "title": "DNS A Records (IPv4)",
+              "value": "104.18.27.217, 104.18.26.217",
+              "sourceUrl": "https://cloudflare-dns.com/dns-query?name=spacex.com&type=A",
+              "timestamp": "2026-04-23T04:23:08.010Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "84161e5a-9f69-4b15-b835-33297b9de21c",
+              "title": "MX Records (Mail)",
+              "value": "5 mxa-003ea501.gslb.gpphosted.com. | 5 mxb-003ea501.gslb.gpphosted.com.",
+              "timestamp": "2026-04-23T04:23:08.010Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:23:08.010Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "SpaceX",
+          "status": "success",
+          "data": [
+            {
+              "id": "031520da-d9a9-4342-92da-b8ccbc66d37b",
+              "title": "GitHub Profile",
+              "value": "Michael Williams — 26 repos, 37 followers",
+              "sourceUrl": "https://github.com/spacex",
+              "timestamp": "2026-04-23T04:23:08.017Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:23:08.016Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "SpaceX",
+          "status": "success",
+          "data": [
+            {
+              "id": "54f83020-3a06-432d-9426-0f2829be9f38",
+              "title": "No Known Data Breaches",
+              "value": "Domain spacex.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-23T04:23:08.020Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:23:08.020Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "SpaceX",
+          "status": "success",
+          "data": [
+            {
+              "id": "10868011-da0e-4490-bf6f-23f0a3190a4a",
+              "title": "Wikipedia: SpaceX",
+              "value": "Space Exploration Technologies Corporation, doing business as SpaceX, is a private American aerospace and artificial intelligence company headquartered at the Starbase development site in Starbase, Texas. Since its founding in 2002, the company has made numerous advances in rocket propulsion, reusab…",
+              "sourceUrl": "https://en.wikipedia.org/wiki/SpaceX",
+              "timestamp": "2026-04-23T04:23:08.023Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:23:08.023Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "SpaceX",
+          "status": "success",
+          "data": [
+            {
+              "id": "47514ba6-6c84-4ff6-b58a-d67e4f3ac673",
+              "title": "SEC EDGAR Filings Found",
+              "value": "100 filing(s) found. Latest: undefined on 2022-03-09",
+              "sourceUrl": "https://efts.sec.gov/LATEST/search-index?q=%22SpaceX%22",
+              "timestamp": "2026-04-23T04:23:08.026Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "90c58314-38a4-407b-aa76-c341cdd26cb1",
+              "title": "SEC EDGAR Search",
+              "value": "View SpaceX public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=SpaceX&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-23T04:23:08.026Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "9988b600-9e54-4c72-916b-c3ff9c0dbeb6",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify SpaceX against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=SpaceX",
+              "timestamp": "2026-04-23T04:23:08.026Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T04:23:08.026Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 7,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 6
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"SpaceX\" completed across 6/6 data sources. 20 data points collected. Overall risk assessment: LOW RISK (7/100). No major risk indicators found.",
+      "createdAt": "2026-04-23T04:23:08.005Z",
+      "status": "complete",
+      "completedAt": "2026-04-23T04:23:11.824Z"
+    },
+    {
+      "id": "4a9cb60b-ec2e-4efe-ab39-c9460379311b",
+      "entity": {
+        "name": "Prapanna Bista",
+        "type": "individual"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Prapanna Bista",
+          "status": "success",
+          "data": [
+            {
+              "id": "c5e66701-04b9-49b3-9bef-cb3e10a5d7d3",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/in/prapanna-bista",
+              "sourceUrl": "https://www.linkedin.com/in/prapanna-bista",
+              "timestamp": "2026-04-22T05:40:42.835Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "87fd1646-9123-48e3-a85a-101724e37a01",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Prapanna Bista\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Prapanna%20Bista&src=typed_query",
+              "timestamp": "2026-04-22T05:40:42.835Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:40:42.835Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Prapanna Bista",
+          "status": "success",
+          "data": [
+            {
+              "id": "9fa4cf44-3438-48f5-9044-1c2f2df2c444",
+              "title": "DNS Status",
+              "value": "Domain may not exist (status 3)",
+              "timestamp": "2026-04-22T05:40:42.840Z",
+              "riskLevel": "medium",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:40:42.840Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Prapanna Bista",
+          "status": "success",
+          "data": [
+            {
+              "id": "32496581-a9fe-46db-b4d6-fb7f7199cf39",
+              "title": "Possible GitHub Profile: bistaprapannabista",
+              "value": "https://github.com/bistaprapannabista",
+              "sourceUrl": "https://github.com/bistaprapannabista",
+              "timestamp": "2026-04-22T05:40:42.844Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:40:42.844Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Prapanna Bista",
+          "status": "success",
+          "data": [
+            {
+              "id": "5c3010d7-589c-410d-ad24-47824231fc2e",
+              "title": "No Known Data Breaches",
+              "value": "Domain prapannabista.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-22T05:40:42.846Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:40:42.846Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Prapanna Bista",
+          "status": "success",
+          "data": [
+            {
+              "id": "a54eb543-033b-4e9c-9757-07289b78fd5a",
+              "title": "News Search",
+              "value": "Set NEWS_API_KEY or GNEWS_API_KEY in .env.local for full news coverage of \"Prapanna Bista\"",
+              "timestamp": "2026-04-22T05:40:42.847Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:40:42.847Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Prapanna Bista",
+          "status": "success",
+          "data": [
+            {
+              "id": "0d4ff7e8-4820-467c-a46d-0f5186ae4707",
+              "title": "SEC EDGAR Search",
+              "value": "View Prapanna Bista public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Prapanna%20Bista&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-22T05:40:42.849Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "0ba29ec1-b07d-4bf2-819b-76a227904c19",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Prapanna Bista against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Prapanna%20Bista",
+              "timestamp": "2026-04-22T05:40:42.849Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:40:42.849Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 10,
+        "breakdown": {
+          "social": 5,
+          "technical": 17,
+          "regulatory": 8
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Prapanna Bista\" completed across 6/6 data sources. 8 data points collected. Overall risk assessment: LOW RISK (10/100). No major risk indicators found.",
+      "createdAt": "2026-04-22T05:40:42.835Z",
+      "status": "complete",
+      "completedAt": "2026-04-22T05:40:47.821Z"
+    },
+    {
+      "id": "0fbe1393-cf90-4ced-a5f3-26af553f3d95",
+      "entity": {
+        "name": "Travis Haasch",
+        "type": "individual"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "913c9b70-5bde-4526-9503-ad84a4e0f454",
+              "title": "LinkedIn (Potential Profile)",
+              "value": "https://www.linkedin.com/in/travis-haasch",
+              "sourceUrl": "https://www.linkedin.com/in/travis-haasch",
+              "timestamp": "2026-04-22T05:07:50.840Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "77b96a98-79dd-4d03-93ca-7eb3600c8c50",
+              "title": "Twitter/X Search",
+              "value": "View mentions of \"Travis Haasch\" on X/Twitter",
+              "sourceUrl": "https://x.com/search?q=Travis%20Haasch&src=typed_query",
+              "timestamp": "2026-04-22T05:07:50.840Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:07:50.840Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "WHOIS Lookup",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "92d617bf-8f8f-4c7a-802a-3a6d28362b4b",
+              "title": "DNS Status",
+              "value": "Domain may not exist (status 3)",
+              "timestamp": "2026-04-22T05:07:50.846Z",
+              "riskLevel": "medium",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:07:50.846Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "f96b454c-c940-4aab-84b9-40a13bf6610c",
+              "title": "GitHub Profile",
+              "value": "travishaasch — 1 repos, 1 followers",
+              "sourceUrl": "https://github.com/travishaasch",
+              "timestamp": "2026-04-22T05:07:50.850Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "46104092-ec44-4762-8a2e-0b622d3728a0",
+              "title": "Repo: marsa",
+              "value": "No description (★ 0)",
+              "sourceUrl": "https://github.com/travishaasch/marsa",
+              "timestamp": "2025-02-11T15:06:21Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:07:50.850Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "741b8af3-a95f-401e-99b0-f222b3859256",
+              "title": "No Known Data Breaches",
+              "value": "Domain travishaasch.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-22T05:07:50.852Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:07:50.852Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "340f8d66-0ceb-445b-aff2-e5d0202d9691",
+              "title": "News Search",
+              "value": "Set NEWS_API_KEY or GNEWS_API_KEY in .env.local for full news coverage of \"Travis Haasch\"",
+              "timestamp": "2026-04-22T05:07:50.854Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:07:50.854Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "21bc3b4c-86f3-4cdf-ad4c-e2c85825b55f",
+              "title": "SEC EDGAR Search",
+              "value": "View Travis Haasch public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Travis%20Haasch&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-22T05:07:50.856Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "30f6d997-6c35-4999-883b-b55b60d6ea79",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Travis Haasch against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Travis%20Haasch",
+              "timestamp": "2026-04-22T05:07:50.856Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-22T05:07:50.856Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 9,
+        "breakdown": {
+          "social": 5,
+          "technical": 14,
+          "regulatory": 8
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Travis Haasch\" completed across 6/6 data sources. 9 data points collected. Overall risk assessment: LOW RISK (9/100). No major risk indicators found.",
+      "createdAt": "2026-04-22T05:07:50.840Z",
+      "status": "complete",
+      "completedAt": "2026-04-22T05:07:53.161Z"
+    },
+    {
       "id": "b1e7f104-d2e8-41f7-9ed2-c00956888c31",
       "entity": {
         "name": "AiGeeks",
@@ -1728,6 +2448,46 @@
     }
   ],
   "history": [
+    {
+      "id": "803942ba-024e-4b11-a2e5-1bec4f17e16b",
+      "entityName": "travis hassach",
+      "entityType": "individual",
+      "riskScore": 13,
+      "dataPointCount": 7,
+      "adapterCount": 6,
+      "createdAt": "2026-04-23T04:24:48.101Z",
+      "status": "complete"
+    },
+    {
+      "id": "4af058d1-659c-4ee7-846c-422e9a6b39ee",
+      "entityName": "SpaceX",
+      "entityType": "company",
+      "riskScore": 7,
+      "dataPointCount": 20,
+      "adapterCount": 6,
+      "createdAt": "2026-04-23T04:23:08.005Z",
+      "status": "complete"
+    },
+    {
+      "id": "4a9cb60b-ec2e-4efe-ab39-c9460379311b",
+      "entityName": "Prapanna Bista",
+      "entityType": "individual",
+      "riskScore": 10,
+      "dataPointCount": 8,
+      "adapterCount": 6,
+      "createdAt": "2026-04-22T05:40:42.835Z",
+      "status": "complete"
+    },
+    {
+      "id": "0fbe1393-cf90-4ced-a5f3-26af553f3d95",
+      "entityName": "Travis Haasch",
+      "entityType": "individual",
+      "riskScore": 9,
+      "dataPointCount": 9,
+      "adapterCount": 6,
+      "createdAt": "2026-04-22T05:07:50.840Z",
+      "status": "complete"
+    },
     {
       "id": "b1e7f104-d2e8-41f7-9ed2-c00956888c31",
       "entityName": "AiGeeks",
