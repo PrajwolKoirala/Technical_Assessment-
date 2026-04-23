@@ -1,6 +1,890 @@
 {
   "searches": [
     {
+      "id": "acf954de-b72a-413b-a912-76490413a734",
+      "entity": {
+        "name": "Travis Haasch",
+        "type": "individual"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "34c7dd5a-f0ef-43eb-8393-75235cf999be",
+              "title": "LinkedIn Search",
+              "value": "Search \"Travis Haasch\" on LinkedIn",
+              "sourceUrl": "https://www.linkedin.com/search/results/people/?keywords=Travis%20Haasch",
+              "timestamp": "2026-04-23T11:02:21.339Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "3ab7d5f9-ad64-4ba0-9a0a-6abaa2a2788b",
+              "title": "Twitter/X Mentions",
+              "value": "Search active mentions and posts about \"Travis Haasch\"",
+              "sourceUrl": "https://x.com/search?q=Travis%20Haasch&f=live",
+              "timestamp": "2026-04-23T11:02:21.339Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "7afc24f1-b73d-4dab-b508-e0b7804f042a",
+              "title": "Google Scholar Search",
+              "value": "Academic papers and citations by \"Travis Haasch\"",
+              "sourceUrl": "https://scholar.google.com/scholar?q=Travis%20Haasch",
+              "timestamp": "2026-04-23T11:02:21.339Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:21.339Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "Domain & DNS Intelligence",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "bc18627f-9f79-444e-abbd-9b5115dc2b0f",
+              "title": "No Personal Domain Detected",
+              "value": "Checked travishaasch.com, travishaasch.io, travishaasch.dev, travishaasch.me, travishaasch.net — no active DNS records found",
+              "timestamp": "2026-04-23T11:02:21.343Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:21.343Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "113225c4-155c-437f-8443-92ed9a71e2cb",
+              "title": "GitHub: travishaasch",
+              "value": "1 public repos · 1 followers · following 5",
+              "sourceUrl": "https://github.com/travishaasch",
+              "timestamp": "2026-04-23T11:02:21.359Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "99cfe650-67b7-426e-ac70-e524246c412e",
+              "title": "GitHub Member Since",
+              "value": "2021 (5 years on GitHub)",
+              "sourceUrl": "https://github.com/travishaasch",
+              "timestamp": "2026-04-23T11:02:21.359Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "aa9ca83a-afbc-4845-a3c6-1069911fe258",
+              "title": "Repo: marsa",
+              "value": "No description · ★0",
+              "sourceUrl": "https://github.com/travishaasch/marsa",
+              "timestamp": "2025-02-11T15:06:21Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:21.359Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "457f77fe-35b1-40df-a6af-0dbb385ebafc",
+              "title": "No Known Data Breaches",
+              "value": "Domain travishaasch.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-23T11:02:21.361Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:21.361Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "6a221459-4f74-477a-b858-8796c8eef801",
+              "title": "News Coverage",
+              "value": "No news articles found. Add NEWS_API_KEY to .env.local for broader coverage of \"Travis Haasch\"",
+              "timestamp": "2026-04-23T11:02:21.364Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:21.364Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Travis Haasch",
+          "status": "success",
+          "data": [
+            {
+              "id": "b068d136-b962-4e22-aa73-547d27d8e4b4",
+              "title": "SEC EDGAR Search",
+              "value": "View Travis Haasch public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Travis%20Haasch&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-23T11:02:21.366Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "95f45c14-7fe1-44ce-b7e8-c9f72a974ac4",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Travis Haasch against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Travis%20Haasch",
+              "timestamp": "2026-04-23T11:02:21.366Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:21.366Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 6,
+        "breakdown": {
+          "social": 5,
+          "technical": 5,
+          "regulatory": 8
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Travis Haasch\" completed across 6/6 data sources. 11 data points collected. Overall risk assessment: LOW RISK (6/100). No major risk indicators found.",
+      "createdAt": "2026-04-23T11:02:21.339Z",
+      "status": "complete",
+      "completedAt": "2026-04-23T11:02:29.775Z"
+    },
+    {
+      "id": "10932239-6a53-4d71-995f-dce80599acd0",
+      "entity": {
+        "name": "Apple Inc",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "95d07bc0-0a8b-4c10-9141-6a502b5f010e",
+              "title": "Wikipedia: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. It was renamed to its current",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "c2a42a9a-d255-44c4-8fca-6e0673d61bf5",
+              "title": "Wikidata: Apple Inc.",
+              "value": "American multinational technology company based in Cupertino, California",
+              "sourceUrl": "http://www.wikidata.org/entity/Q312",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "e4ef9460-7f3c-4d28-b241-6afa8b64e59b",
+              "title": "Wikidata: Apple media event",
+              "value": "type of periodical livestreamed special event held by Apple Inc.",
+              "sourceUrl": "http://www.wikidata.org/entity/Q62033032",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "adb8c2a9-2432-4a00-ab83-af07ad837d15",
+              "title": "Stack Overflow: Apple Inc.",
+              "value": "Reputation: 1",
+              "sourceUrl": "https://stackoverflow.com/users/6315143/apple-inc",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "41b0e56b-fc04-47d2-a869-c5a32ee4423e",
+              "title": "Stack Overflow: Apple Inc. Developer",
+              "value": "Reputation: 1",
+              "sourceUrl": "https://stackoverflow.com/users/15813108/apple-inc-developer",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "cc5ea63c-c3ab-4d4e-9dff-3936f44865ec",
+              "title": "LinkedIn Search",
+              "value": "Search \"Apple Inc\" on LinkedIn",
+              "sourceUrl": "https://www.linkedin.com/search/results/people/?keywords=Apple%20Inc",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "5e06cd55-a581-446a-8c32-cfc127383e4a",
+              "title": "Twitter/X Mentions",
+              "value": "Search active mentions and posts about \"Apple Inc\"",
+              "sourceUrl": "https://x.com/search?q=Apple%20Inc&f=live",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "df570083-670e-4a7d-8ef7-a10ade2e4685",
+              "title": "Google Scholar Search",
+              "value": "Academic papers and citations by \"Apple Inc\"",
+              "sourceUrl": "https://scholar.google.com/scholar?q=Apple%20Inc",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "6b682d42-51d2-4589-b637-daf30f9351a7",
+              "title": "Company: Apple Inclusion",
+              "value": "Official domain: appleinclusion.com",
+              "sourceUrl": "https://appleinclusion.com",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "6bd745b8-b657-4a82-be49-1764304df4d9",
+              "title": "Company: Apple Inclusive",
+              "value": "Official domain: appleinclusive.com",
+              "sourceUrl": "https://appleinclusive.com",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "5611cac0-6937-42d7-aefe-8968c0dedc7b",
+              "title": "Company: Apple Contracting",
+              "value": "Official domain: appleinc.net",
+              "sourceUrl": "https://appleinc.net",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "55a51e34-e60c-4b28-b6ea-ed6437d79380",
+              "title": "Crunchbase Company Intelligence",
+              "value": "Funding rounds, investors, and company data for Apple Inc",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations?q=Apple%20Inc",
+              "timestamp": "2026-04-23T11:02:06.050Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:06.050Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "Domain & DNS Intelligence",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "40ee9ca9-a12d-4d04-9665-60e43aeb0795",
+              "title": "Personal Domain(s) Found",
+              "value": "apple-inc.com, appleinc.com, apple-inc.net, appleinc.net",
+              "sourceUrl": "https://apple-inc.com",
+              "timestamp": "2026-04-23T11:02:06.054Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "23c7a63f-667b-4380-a96c-04d44141007d",
+              "title": "Domain",
+              "value": "apple-inc.com",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:02:06.054Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "74c33152-1b4e-4593-8ff9-cddc1e28e28a",
+              "title": "Registrar",
+              "value": "Nom-iq Ltd. dba COM LAUDE",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:02:06.054Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "3aa7e046-2e55-4d2d-bb4f-983865659749",
+              "title": "Registered On",
+              "value": "January 21, 2000",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:02:06.054Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "d27ac4a0-e849-4785-9230-a3caf77675b8",
+              "title": "Expires On",
+              "value": "January 21, 2027",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:02:06.054Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "bc3dadcb-6f1a-402b-87d1-11688ef911ff",
+              "title": "Nameservers",
+              "value": "A.NS.APPLE.COM, B.NS.APPLE.COM, C.NS.APPLE.COM, D.NS.APPLE.COM",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:02:06.054Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "11aad7fe-2cc3-45e6-a60c-ca7ff9beb7dd",
+              "title": "IPv4 Address",
+              "value": "17.179.192.127",
+              "timestamp": "2026-04-23T11:02:06.054Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:06.054Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "0de5d2d1-3837-4d18-b7d0-777fe70b67f4",
+              "title": "GitHub: appleinc",
+              "value": "",
+              "sourceUrl": "https://github.com/appleinc",
+              "timestamp": "2026-04-23T11:02:06.070Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "1dfb9350-55ab-42d7-9f5d-e9802500ff9e",
+              "title": "GitHub Member Since",
+              "value": "2017 (9 years on GitHub)",
+              "sourceUrl": "https://github.com/appleinc",
+              "timestamp": "2026-04-23T11:02:06.070Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:06.070Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "19ffcf78-1b98-4fa1-a183-da5a6b7b2678",
+              "title": "No Known Data Breaches",
+              "value": "Domain appleinc.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-23T11:02:06.072Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:06.072Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "e220b4e9-1cab-4086-a3b1-a5fdb97da5c1",
+              "title": "Wikipedia: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. It was renamed to its current name in 2007 as the company had expanded its focus from computers to consumer electronics. Apple is",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-23T11:02:06.073Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "885eea31-8067-4ce5-9863-9d3fc0adcf40",
+              "title": "DuckDuckGo: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. It was renamed \"Apple Inc.\" in 200",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-23T11:02:06.073Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "da5d0d9d-1375-44a0-80ae-78144daa2821",
+              "title": "Related: Apple Inc. Category",
+              "value": "Apple Inc. Category",
+              "sourceUrl": "https://duckduckgo.com/c/Apple_Inc.",
+              "timestamp": "2026-04-23T11:02:06.073Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "e1cfee63-0967-4a59-949c-054c894a5a20",
+              "title": "Related: Outline of Apple Inc. - The following outline of Apple Inc. ",
+              "value": "Outline of Apple Inc. - The following outline of Apple Inc. is a topical guide to the products, history, retail stores, corporate acquisitions, and personnel under the purview of the American multinat",
+              "sourceUrl": "https://duckduckgo.com/Outline_of_Apple_Inc.",
+              "timestamp": "2026-04-23T11:02:06.073Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "094846d4-e96c-420a-8736-c1360ece6d09",
+              "title": "Related: Companies in the PRISM network",
+              "value": "Companies in the PRISM network",
+              "sourceUrl": "https://duckduckgo.com/c/Companies_in_the_PRISM_network",
+              "timestamp": "2026-04-23T11:02:06.073Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:06.073Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "52aa42c4-953a-4457-b7d3-db289526b9bd",
+              "title": "SEC EDGAR Filings Found",
+              "value": "100 filing(s) found. Latest: undefined on 2025-10-31",
+              "sourceUrl": "https://efts.sec.gov/LATEST/search-index?q=%22Apple%20Inc%22",
+              "timestamp": "2026-04-23T11:02:06.074Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "262420b7-d4a9-4ad6-86de-109721467390",
+              "title": "SEC EDGAR Search",
+              "value": "View Apple Inc public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Apple%20Inc&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-23T11:02:06.074Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "1bad8f28-0cbd-47cb-9721-f5d4f4564ba1",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Apple Inc against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Apple%20Inc",
+              "timestamp": "2026-04-23T11:02:06.074Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:02:06.074Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 7,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 6
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Apple Inc\" completed across 6/6 data sources. 30 data points collected. Overall risk assessment: LOW RISK (7/100). No major risk indicators found.",
+      "createdAt": "2026-04-23T11:02:06.050Z",
+      "status": "complete",
+      "completedAt": "2026-04-23T11:02:09.068Z"
+    },
+    {
+      "id": "cff5437f-25c9-47f1-ae28-177ed04f8746",
+      "entity": {
+        "name": "Apple Inc",
+        "type": "company"
+      },
+      "results": [
+        {
+          "adapterId": "social",
+          "adapterName": "Social & Web Presence",
+          "category": "social",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "57d66ec1-98cd-483e-96a0-a0d486bcf4be",
+              "title": "Wikipedia: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. It was renamed to its current",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "26eeb85a-683d-43d2-be64-b096b689a0ac",
+              "title": "Wikidata: Apple Inc.",
+              "value": "American multinational technology company based in Cupertino, California",
+              "sourceUrl": "http://www.wikidata.org/entity/Q312",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "d6d59599-fdc1-4249-b1d5-8a3c0a24b7b3",
+              "title": "Wikidata: Apple media event",
+              "value": "type of periodical livestreamed special event held by Apple Inc.",
+              "sourceUrl": "http://www.wikidata.org/entity/Q62033032",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "0522e656-0e46-44e8-9cb4-7e0774838791",
+              "title": "Stack Overflow: Apple Inc.",
+              "value": "Reputation: 1",
+              "sourceUrl": "https://stackoverflow.com/users/6315143/apple-inc",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "b256d7c4-8d76-4eeb-b5cf-7247493993d9",
+              "title": "Stack Overflow: Apple Inc. Developer",
+              "value": "Reputation: 1",
+              "sourceUrl": "https://stackoverflow.com/users/15813108/apple-inc-developer",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "d01cf949-c878-4ef4-af3b-fe4b4cf427ce",
+              "title": "LinkedIn Search",
+              "value": "Search \"Apple Inc\" on LinkedIn",
+              "sourceUrl": "https://www.linkedin.com/search/results/people/?keywords=Apple%20Inc",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "17d4606e-be04-47fd-8dfd-fac0405903f9",
+              "title": "Twitter/X Mentions",
+              "value": "Search active mentions and posts about \"Apple Inc\"",
+              "sourceUrl": "https://x.com/search?q=Apple%20Inc&f=live",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "fa5e1768-098a-4cc6-bb18-a3b38f1b8927",
+              "title": "Google Scholar Search",
+              "value": "Academic papers and citations by \"Apple Inc\"",
+              "sourceUrl": "https://scholar.google.com/scholar?q=Apple%20Inc",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "b1839ed8-04f7-445b-af24-f37fe7c14efc",
+              "title": "Company: Apple Inclusion",
+              "value": "Official domain: appleinclusion.com",
+              "sourceUrl": "https://appleinclusion.com",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "f73194c2-bd91-425b-8a6a-9a78018689f0",
+              "title": "Company: Apple Inclusive",
+              "value": "Official domain: appleinclusive.com",
+              "sourceUrl": "https://appleinclusive.com",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "db6b0829-505b-4af5-8b82-065565c2d8eb",
+              "title": "Company: Apple Contracting",
+              "value": "Official domain: appleinc.net",
+              "sourceUrl": "https://appleinc.net",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "0480abaa-c4da-43e0-bea6-14259a83c8c7",
+              "title": "Crunchbase Company Intelligence",
+              "value": "Funding rounds, investors, and company data for Apple Inc",
+              "sourceUrl": "https://www.crunchbase.com/search/organizations?q=Apple%20Inc",
+              "timestamp": "2026-04-23T11:01:46.519Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:01:46.518Z"
+        },
+        {
+          "adapterId": "whois",
+          "adapterName": "Domain & DNS Intelligence",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "f0ade2ce-9066-4b07-b9c9-7b3c015a2673",
+              "title": "Personal Domain(s) Found",
+              "value": "apple-inc.com, apple-inc.net, appleinc.com, appleinc.net",
+              "sourceUrl": "https://apple-inc.com",
+              "timestamp": "2026-04-23T11:01:46.522Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "f0d66ae8-5129-4c38-af3d-33bc9c132930",
+              "title": "Domain",
+              "value": "apple-inc.com",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:01:46.522Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "615f9205-f5e1-4c76-a403-a4fabfc62c52",
+              "title": "Registrar",
+              "value": "Nom-iq Ltd. dba COM LAUDE",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:01:46.522Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "885e4f45-11dc-4807-815f-40ccfe7c09e7",
+              "title": "Registered On",
+              "value": "January 21, 2000",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:01:46.522Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "7e27abb9-4718-4b03-88b1-cfad0eecabcf",
+              "title": "Expires On",
+              "value": "January 21, 2027",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:01:46.522Z",
+              "riskLevel": "medium",
+              "confidence": "high"
+            },
+            {
+              "id": "ae0de736-b792-4b23-97f2-d4b3f8c9f05f",
+              "title": "Nameservers",
+              "value": "A.NS.APPLE.COM, B.NS.APPLE.COM, C.NS.APPLE.COM, D.NS.APPLE.COM",
+              "sourceUrl": "https://rdap.org/domain/apple-inc.com",
+              "timestamp": "2026-04-23T11:01:46.522Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "e399f4ec-8f33-407b-a3a4-7271aad19b78",
+              "title": "IPv4 Address",
+              "value": "17.179.192.127",
+              "timestamp": "2026-04-23T11:01:46.522Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:01:46.522Z"
+        },
+        {
+          "adapterId": "github",
+          "adapterName": "GitHub",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "dbb97ea0-78fc-4512-9026-d5fa57721ad8",
+              "title": "GitHub: appleinc",
+              "value": "",
+              "sourceUrl": "https://github.com/appleinc",
+              "timestamp": "2026-04-23T11:01:46.542Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "c82a221e-4c8b-4bc5-b366-9ff6c937fc84",
+              "title": "GitHub Member Since",
+              "value": "2017 (9 years on GitHub)",
+              "sourceUrl": "https://github.com/appleinc",
+              "timestamp": "2026-04-23T11:01:46.542Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:01:46.542Z"
+        },
+        {
+          "adapterId": "hibp",
+          "adapterName": "Data Breach Check",
+          "category": "technical",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "af4ec31f-498c-4864-8bb1-4ab569df6eca",
+              "title": "No Known Data Breaches",
+              "value": "Domain appleinc.com has no known breaches in HIBP",
+              "sourceUrl": "https://haveibeenpwned.com/",
+              "timestamp": "2026-04-23T11:01:46.546Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:01:46.545Z"
+        },
+        {
+          "adapterId": "news",
+          "adapterName": "News & Media",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "30d387cf-bb43-40ed-9e74-33e2cb072d59",
+              "title": "Wikipedia: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, best known for its consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. It was renamed to its current name in 2007 as the company had expanded its focus from computers to consumer electronics. Apple is",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-23T11:01:46.548Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "fe36cc17-bd3b-4dc8-8bf0-f44524dbba80",
+              "title": "DuckDuckGo: Apple Inc.",
+              "value": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California, in Silicon Valley, and known for consumer electronics, software and online services. Founded in 1976 as Apple Computer Company by Steve Jobs, Steve Wozniak and Ronald Wayne, the company was incorporated by Jobs and Wozniak as Apple Computer, Inc. the following year. It was renamed \"Apple Inc.\" in 200",
+              "sourceUrl": "https://en.wikipedia.org/wiki/Apple_Inc.",
+              "timestamp": "2026-04-23T11:01:46.548Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "adc928d7-5484-4b58-a450-08f77b790351",
+              "title": "Related: Apple Inc. Category",
+              "value": "Apple Inc. Category",
+              "sourceUrl": "https://duckduckgo.com/c/Apple_Inc.",
+              "timestamp": "2026-04-23T11:01:46.548Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "659fad24-02e5-4945-88a6-d4dd7999124a",
+              "title": "Related: Outline of Apple Inc. - The following outline of Apple Inc. ",
+              "value": "Outline of Apple Inc. - The following outline of Apple Inc. is a topical guide to the products, history, retail stores, corporate acquisitions, and personnel under the purview of the American multinat",
+              "sourceUrl": "https://duckduckgo.com/Outline_of_Apple_Inc.",
+              "timestamp": "2026-04-23T11:01:46.548Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            },
+            {
+              "id": "20412cdf-136d-4568-8ea8-958ea2e6e2fc",
+              "title": "Related: Companies in the PRISM network",
+              "value": "Companies in the PRISM network",
+              "sourceUrl": "https://duckduckgo.com/c/Companies_in_the_PRISM_network",
+              "timestamp": "2026-04-23T11:01:46.548Z",
+              "riskLevel": "low",
+              "confidence": "medium"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:01:46.548Z"
+        },
+        {
+          "adapterId": "regulatory",
+          "adapterName": "Regulatory & Company Registry",
+          "category": "regulatory",
+          "entityName": "Apple Inc",
+          "status": "success",
+          "data": [
+            {
+              "id": "c4221f7a-8ca2-4221-9929-b41b7ecd7385",
+              "title": "SEC EDGAR Filings Found",
+              "value": "100 filing(s) found. Latest: undefined on 2025-10-31",
+              "sourceUrl": "https://efts.sec.gov/LATEST/search-index?q=%22Apple%20Inc%22",
+              "timestamp": "2026-04-23T11:01:46.550Z",
+              "riskLevel": "low",
+              "confidence": "high"
+            },
+            {
+              "id": "f9434305-03c1-470a-b5ed-ddb272769b2f",
+              "title": "SEC EDGAR Search",
+              "value": "View Apple Inc public filings on SEC EDGAR",
+              "sourceUrl": "https://www.sec.gov/cgi-bin/browse-edgar?company=Apple%20Inc&CIK=&type=10-K&dateb=&owner=include&count=10&search_text=&action=getcompany",
+              "timestamp": "2026-04-23T11:01:46.550Z",
+              "riskLevel": "low",
+              "confidence": "low"
+            },
+            {
+              "id": "28b1e9c8-07e6-4d4e-b6bb-b0a97b03d56e",
+              "title": "OFAC Sanctions Check",
+              "value": "Verify Apple Inc against US Treasury OFAC sanctions list",
+              "sourceUrl": "https://sanctionssearch.ofac.treas.gov/?keywords=Apple%20Inc",
+              "timestamp": "2026-04-23T11:01:46.550Z",
+              "riskLevel": "unknown",
+              "confidence": "low"
+            }
+          ],
+          "fetchedAt": "2026-04-23T11:01:46.549Z"
+        }
+      ],
+      "riskScore": {
+        "overall": 7,
+        "breakdown": {
+          "social": 5,
+          "technical": 9,
+          "regulatory": 6
+        },
+        "highRiskCount": 0,
+        "criticalRiskCount": 0
+      },
+      "summary": "OSINT analysis for \"Apple Inc\" completed across 6/6 data sources. 30 data points collected. Overall risk assessment: LOW RISK (7/100). No major risk indicators found.",
+      "createdAt": "2026-04-23T11:01:46.518Z",
+      "status": "complete",
+      "completedAt": "2026-04-23T11:01:53.519Z"
+    },
+    {
       "id": "d100db87-3279-44f2-80a7-699b29347bdd",
       "entity": {
         "name": "Travis Haasch",
@@ -2610,6 +3494,36 @@
     }
   ],
   "history": [
+    {
+      "id": "acf954de-b72a-413b-a912-76490413a734",
+      "entityName": "Travis Haasch",
+      "entityType": "individual",
+      "riskScore": 6,
+      "dataPointCount": 11,
+      "adapterCount": 6,
+      "createdAt": "2026-04-23T11:02:21.339Z",
+      "status": "complete"
+    },
+    {
+      "id": "10932239-6a53-4d71-995f-dce80599acd0",
+      "entityName": "Apple Inc",
+      "entityType": "company",
+      "riskScore": 7,
+      "dataPointCount": 30,
+      "adapterCount": 6,
+      "createdAt": "2026-04-23T11:02:06.050Z",
+      "status": "complete"
+    },
+    {
+      "id": "cff5437f-25c9-47f1-ae28-177ed04f8746",
+      "entityName": "Apple Inc",
+      "entityType": "company",
+      "riskScore": 7,
+      "dataPointCount": 30,
+      "adapterCount": 6,
+      "createdAt": "2026-04-23T11:01:46.518Z",
+      "status": "complete"
+    },
     {
       "id": "d100db87-3279-44f2-80a7-699b29347bdd",
       "entityName": "Travis Haasch",

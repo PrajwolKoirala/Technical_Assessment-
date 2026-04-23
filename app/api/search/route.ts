@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { runSearch } from "@/lib/orchestrator";
 import { SearchApiRequest } from "@/types";
 
-export const maxDuration = 60;
+export const maxDuration = 60; // Vercel: allow up to 60s for parallel adapters
 
 export async function POST(req: NextRequest) {
   try {
