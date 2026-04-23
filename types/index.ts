@@ -48,6 +48,7 @@ export interface EntityProfile {
   location?: string;
   name?: string;
   tags?: string[];
+  company?: string;
 }
 
 export interface SearchResult {

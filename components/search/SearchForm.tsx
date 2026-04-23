@@ -15,14 +15,14 @@ export function SearchForm() {
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!name.trim() || isSearching) return;
-    const result = await runSearch(name.trim(), type);
-    if (result) router.push(`/results/${result.id}`);
+    const resultId = await runSearch(name.trim(), type);
+    if (resultId) router.push(`/results/${resultId}`);
   }
 
   const examples =
     type === "company"
-      ? ["AiGeeks", "OpenAI", "Anthropic", "SpaceX"]
-      : ["Travis","Elon Musk", "Sam Altman", "Sundar Pichai"];
+      ? ["Apple Inc", "OpenAI", "Anthropic", "SpaceX"]
+      : ["Elon Musk", "Sam Altman", "Travis Haasch"];
 
   return (
     <form onSubmit={handleSubmit} className="w-full max-w-2xl mx-auto space-y-6">

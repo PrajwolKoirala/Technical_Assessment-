@@ -1,14 +1,17 @@
+import { EntityProfile } from "@/types";
+/**
+ * Database Layer
+ * Uses Prisma + PostgreSQL when DATABASE_URL is set.
+ * Falls back to local JSON for zero-config local dev.
+ *
+ * Setup Postgres:
+ *   1. Add DATABASE_URL="postgresql://..." to .env.local
+ *   2. npx prisma generate && npx prisma db push
+ */
 
 import { join } from "path";
 import { SearchResult, AdapterResult } from "@/types";
 
-export interface EntityProfile {
-  image?: string;
-  bio?: string;
-  url?: string;
-  location?: string;
-  name?: string;
-}
 
 export interface DbFinding {
   id: string;
@@ -43,10 +46,11 @@ export interface DbSearch {
   profileBio: string | null;
   profileUrl: string | null;
   profileLocation: string | null;
+  profileCompany: string | null;
+  profileTags: string | null;
   findings?: DbFinding[];
   rawResults?: AdapterResult[];
 }
-
 // ─── Prisma lazy singleton ────────────────────────────────────────────────────
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let _prisma: any = null;
@@ -123,6 +127,8 @@ export const db = {
           profileBio: profile.bio ?? null,
           profileUrl: profile.url ?? null,
           profileLocation: profile.location ?? null,
+          profileCompany: profile.company ?? null,
+          profileTags: profile.tags ? JSON.stringify(profile.tags) : null,
           findings: { create: allFindings.map(({ searchId: _, ...f }) => ({ ...f })) },
         },
         update: {
@@ -133,6 +139,8 @@ export const db = {
           profileBio: profile.bio ?? null,
           profileUrl: profile.url ?? null,
           profileLocation: profile.location ?? null,
+          profileCompany: profile.company ?? null,
+          profileTags: profile.tags ? JSON.stringify(profile.tags) : null,
         },
       });
     } else {
@@ -156,6 +164,8 @@ export const db = {
         profileBio: profile.bio ?? null,
         profileUrl: profile.url ?? null,
         profileLocation: profile.location ?? null,
+          profileCompany: profile.company ?? null,
+          profileTags: profile.tags ? JSON.stringify(profile.tags) : null,
         findings: allFindings,
         rawResults: result.results,
       };
