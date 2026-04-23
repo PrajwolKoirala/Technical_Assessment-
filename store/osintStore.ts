@@ -1,45 +1,40 @@
 import { create } from "zustand";
-import { SearchResult, SearchHistoryEntry, EntityType } from "@/types";
+import { EntityType } from "@/types";
+import { DbSearch, DbFinding } from "@/lib/db";
 
 interface OsintStore {
-  // Search state
   searchName: string;
   searchType: EntityType;
   isSearching: boolean;
-  isResultLoading: boolean;
-
-  currentResult: SearchResult | null;
+  currentSearch: DbSearch | null;
   searchError: string | null;
-
-  // History
-  history: SearchHistoryEntry[];
+  history: DbSearch[];
   historyLoading: boolean;
 
-  // Actions
   setSearchName: (name: string) => void;
   setSearchType: (type: EntityType) => void;
-  runSearch: (name: string, type: EntityType) => Promise<SearchResult | null>;
+  runSearch: (name: string, type: EntityType) => Promise<string | null>;
   loadHistory: () => Promise<void>;
   deleteHistoryEntry: (id: string) => Promise<void>;
-  loadResult: (id: string) => Promise<SearchResult | null>;
-  clearCurrentResult: () => void;
+  loadResult: (id: string) => Promise<DbSearch | null>;
+  updateFindingStatus: (findingId: string, status: string) => void;
+  clearCurrentSearch: () => void;
 }
 
 export const useOsintStore = create<OsintStore>((set, get) => ({
   searchName: "",
   searchType: "company",
   isSearching: false,
-  currentResult: null,
+  currentSearch: null,
   searchError: null,
   history: [],
   historyLoading: false,
-  isResultLoading: false,
 
   setSearchName: (name) => set({ searchName: name }),
   setSearchType: (type) => set({ searchType: type }),
 
   runSearch: async (name, type) => {
-    set({ isSearching: true, searchError: null, currentResult: null });
+    set({ isSearching: true, searchError: null, currentSearch: null });
     try {
       const res = await fetch("/api/search", {
         method: "POST",
@@ -48,16 +43,15 @@ export const useOsintStore = create<OsintStore>((set, get) => ({
       });
       const json = await res.json();
       if (!json.success) throw new Error(json.error ?? "Search failed");
-      set({ currentResult: json.data, isSearching: false });
-      // refresh history
+      // load the full db record (with findings)
+      const full = await get().loadResult(json.data.id);
       get().loadHistory();
-      return json.data as SearchResult;
+      return full?.id ?? null;
     } catch (err) {
-      set({
-        searchError: err instanceof Error ? err.message : "Unknown error",
-        isSearching: false,
-      });
+      set({ searchError: err instanceof Error ? err.message : "Unknown error", isSearching: false });
       return null;
+    } finally {
+      set({ isSearching: false });
     }
   },
 
@@ -81,29 +75,37 @@ export const useOsintStore = create<OsintStore>((set, get) => ({
     set((s) => ({ history: s.history.filter((h) => h.id !== id) }));
   },
 
- loadResult: async (id) => {
-  set({ isResultLoading: true });
+  loadResult: async (id) => {
+    try {
+      const res = await fetch(`/api/results/${id}`);
+      const json = await res.json();
+      if (json.success) {
+        set({ currentSearch: json.data });
+        return json.data as DbSearch;
+      }
+    } catch { /* ignore */ }
+    return null;
+  },
 
-  try {
-    const res = await fetch(`/api/results/${id}`);
-    const json = await res.json();
+  updateFindingStatus: (findingId, status) => {
+    // Optimistic update
+    set((s) => {
+      if (!s.currentSearch?.findings) return s;
+      return {
+        currentSearch: {
+          ...s.currentSearch,
+          findings: s.currentSearch.findings.map((f: DbFinding) =>
+            f.id === findingId ? { ...f, status } : f
+          ),
+        },
+      };
+    });
+    fetch(`/api/findings/${findingId}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ status }),
+    });
+  },
 
-    if (json.success) {
-      set({
-        currentResult: json.data,
-        isResultLoading: false,
-      });
-
-      return json.data as SearchResult;
-    }
-
-    set({ isResultLoading: false });
-  } catch {
-    set({ isResultLoading: false });
-  }
-
-  return null;
-},
-
-  clearCurrentResult: () => set({ currentResult: null }),
+  clearCurrentSearch: () => set({ currentSearch: null }),
 }));
